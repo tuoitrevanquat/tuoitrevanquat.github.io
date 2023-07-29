@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Van Quat</title>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script> -->
+<!-- </head>
+<body>
+    <a-scene style="height: 100%;">
+        <img id="panorama" src="1.jpg" style="height: 100%;" >
+        <a-sky src="#panorama" rotation = "0 -90 0"></a-sky>
+    </a-scene>
+</body>
+</html>  -->
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VanQuat</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+
+    </head>
+    <body>
+        <div id="panorama"></div>
+
+
+        <script src="./custom.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    </body>
+</html> -->
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+        body{
+            height: auto;
+        }
+    #panorama {
+        /* width: 600px;
+        height: 400px; */
+        width: 600px;
+        height: 400px;
+    }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    // "panorama": "https://pannellum.org/images/alma.jpg",
+    "panorama": "./img/anhpanorama7.jpg",
+    "autoLoad": true
+});
+</script>
+
+</body>
+</html>
