@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/css.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+  </head>
+  <body>
+    <div class="text-center" id="ft">
+      <div class="col-sm-4" style="float: left;">
+        <img src="./img/DTN.jpg" id="logoD">
+      </div>
+      <div class="col-sm-8">
+        <ul>
+          <li style="color: rgb(226, 26, 26); font-weight: 1000;">ĐOÀN TNCS HỒ
+            CHÍ MINH THÔN
+            VÂN QUẬT</li>
+          <li style="color: rgb(46, 109, 247); font-weight: 1000;">ỨNG DỤNG
+            CHUYỂN ĐỔI SỐ -
+            SỐ
+            HÓA THÔNG TIN</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="navb">
+      <nav class="navbar navbar-expand-sm bg-light"">
+        <ul class="navbar-nav" style="color: aqua;">
+          <li class="nav-item" onclick="funcplay()">
+            <a class="nav-link" href="#">Trang Chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Giới Thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Địa Chỉ Đỏ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Liên hệ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container" style="border: solid black 1px;">
+
+    </div>
+    <footer class="text-center"
+      style="width: 100%; height: 60px; background-color: #ccc; margin-top: 50px;">
+      <p>
+        Phát triển bởi
+        <a href="https://www.facebook.com/VietAn.Tran.1606.CE001"
+          style="color: #fff;">Trần Viết An</a>
+      </p>
+    </footer>
+    <audio id="audio_p">
+      <source src="./audio/GiaiDieuTuHao.mp3">
+    </audio>
+  </body>
+  <script>
+    var audio = document.getElementById('audio_p');
+    function funcplay(){
+      audio.play();
+    }
+
+  </script>
+</html>
