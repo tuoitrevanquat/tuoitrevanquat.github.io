@@ -1,0 +1,39 @@
+/* class . - id # */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: aqua;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: aqua;
+    font-size: 15px;
+    background-color: blue;
+    border-radius: 2px;
+}
+
+#ft {
+    width: 100%;
+    height: auto;
+    padding: auto;
+    background-color: #fff;
+    /* border-radius: 1px; */
+    /* border: solid burlywood 1px; */
+}
+
+#logoD {
+    width: auto;
+    height: 100px;
+    float: center;
+
+}
