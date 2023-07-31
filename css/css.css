@@ -1,6 +1,7 @@
 /* class . - id # */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-size: 16px; */
 }
 
 ul {
@@ -13,18 +14,32 @@ a {
 h6{
     font-size: 13px;
 }
+/* #mn{
+    border: #b9b7b7;
+} */
 #mn:hover {
-    color: rgb(29, 27, 139);
-    font-size: 14px;
+    color: rgb(56, 124, 226);
     font-weight: 500;
-    border-radius: 2px;
-    border-bottom: 5px solid rgb(29, 27, 139);
+    /* border-radius: 2px; */
+    border-bottom: 2px solid rgb(56, 124, 226);
 }
 
+
 #logoD {
-    width: 50%;
+    width: 60%;
     height: auto;
     float: center;
+}
+#carousel_img{
+    height: 450px;
+}
+@media screen and (max-width: 600px) {
+    #logoD{
+        width: 80%;
+    }
+    #carousel_img{
+        height: 175px;
+    }
 }
 
 #ca_img{
@@ -34,59 +49,26 @@ h6{
     image-resolution: initial;
 }
 
+#icon{
+    width: 15px;
+    height: auto;
+    float: left;
+    margin-right: 5px;
+}
+/* li{
+    width: 160px;
+} */
+
 
 
 #ft {
     text-align: center;
     width: 100%;
     height: auto;
-    background-color: #ccc;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding-top: 10px;
     padding-bottom: 1px;
     box-shadow: 2px 2px 4px #dfdbdb;
 }
 
 
-/* nav {
-    background-color: #273c75;
-} */
-
-#main-menu {
-    display: flex;
-}
-
-nav #main-menu li a {
-    color: #52525e;
-    text-decoration: none;
-    display: block;
-    padding: 8px 15px;
-}
-
-nav #main-menu li:hover a {
-    background: #b9b7b7;
-    transition: all 0.3s;
-}
-
-#toggle {
-    display: none;
-    /* background:#b9b7b7; */
-    color: #52525e;
-    text-align: left;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-    #main-menu {
-        flex-direction: column;
-        text-align: center;
-    }
-    #toggle {
-        display: block;
-    }
-    nav {
-        display: none;
-    }
-}

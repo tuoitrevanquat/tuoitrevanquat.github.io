@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Trang Chủ</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="css/css_mn.css">
+        <link rel="stylesheet" href="css/css_GT.css">
+
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css"
+            href="bootstraps/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="bootstraps/js/bootstrap.js">
+        <!-- <link type="text/css" href="bootstraps/css/bootstrap.min.css" -->
+        <!-- rel="stylesheet"> -->
+        <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css"
+            rel="stylesheet">
+        <!-- <script type="text/javascript" src="bootstraps/js/jquery.min.js"></script> -->
+        <!-- <script type="text/javascript" src="bootstraps/js/bootstrap.min.js"></script> -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous" />
+        <script src="js/js.js"></script>
+
+    </head>
+    <body>
+
+        <div class="container-fluid" style="display: flex; width: 100%;">
+            <img id="logoD" src="img/banner.png">
+        </div>
+        <div class="container-fluid">
+            <div
+                style="color: black; text-align: center; height : auto; font-weight: 500; float: center;font-size: 10px;"
+                id="time">
+                <span id="ngay"></span><span>/</span>
+                <span id="thang"></span><span>/</span>
+                <span id="nam"></span><span>,</span>
+                <span id="gio">00</span><span> :</span>
+                <span id="phut">00</span><span> :</span>
+                <span id="giay">00</span><span> </span>
+            </div>
+        </div>
+        <!-- //-------------menu------------------- -->
+        <div class="container-fluid mt-2 bg-light">
+            <div id="menu_center">
+                <div class="topnav" id="myTopnav">
+
+                    <a href="index.html" id="mn" onclick="funcplay()">
+                        <img id="icon" src="img/icon/home.png">
+                        Trang Chủ
+                    </a>
+                    <a href id="mn">
+                        <img id="icon" src="img/icon/info.png">
+                        Giới Thiệu
+                    </a>
+                    <a href id="mn">
+                        <img id="icon" src="img/icon/news.png">
+                        Hoạt Động
+                    </a>
+                    <a href="index_DCD1.html" id="mn">
+                        <img id="icon" src="img/icon/map.png">
+                        Địa Chỉ Đỏ
+                    </a>
+                    <a href id="mn">
+                        <img id="icon" src="img/icon/contact.png">
+                        Liên hệ
+                    </a>
+
+                    <a href="javascript:void(0);" class="icon"
+                        onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- //--------end-menu------------------- -->
+            <!-- ---------------carousel---------------- -->
+            <!-- ----------------------end carousel-------- -->
+            <!-- ---------------conten info------------- -->
+            <div class="container-fluid mt-2 bg-light" >
+                <div class="row">
+                    <div class="col-xs-3" id="tab1">
+                        <div style="width: auto; height: auto; background-color: #0099FF; text-align: center; border-radius: 3px;">
+                            <p style="font-size: 20px; color: white; font-weight: 550; padding: 5px;">Tin Tức Nỗi Bật</p>
+                        </div>
+                        <!-- <br> -->
+                        <div>
+                            <marquee direction="up">
+                                <ul
+                                    style="background-color:#EEEEEE; padding: 0px 0px 0px 0px;">
+                                    <li>
+                                        <div style="background-color:#0099FF"
+                                            class="text-center">
+                                            <h5>17/08/2021 - 19:51:04</h5>
+                                        </div>
+                                        <a href="index.html">>>[THÔNG BÁO] Thông
+                                            báo về việc tạm ngừng một số hoạt
+                                            đông...</a>
+                                    </li>
+                                    <li>
+                                        <div style="background-color:#0099FF"
+                                            class="text-center">
+                                            <h5>17/08/2021 - 08:32:04</h5>
+                                        </div>
+                                        <a href="index.html">>>[THÔNG BÁO] Thông
+                                            báo về việc đăng kí người từ Đà Nẵng
+                                            về...</a>
+                                    </li>
+                                    <li>
+                                        <div style="background-color: #0099FF;"
+                                            class="text-center">
+                                            <h5>17/08/2021 - 07:00:00</h5>
+                                        </div>
+                                        <a href="index.html">>>[TIN TỨC] Tổng số
+                                            ca mắt bệnh được công bố trong
+                                            ngày...</a>
+                                    </li>
+                                    <li>
+                                        <div style="background-color: #0099FF;"
+                                            class="text-center">
+                                            <h5>15/08/2021 - 10:37:47</h5>
+                                        </div>
+                                        <a href="index.html">>>[SỰ KIỆN] Tổ chức
+                                            sinh hoạt liên chi Đoàn, chuẩn bị
+                                            công... </a>
+                                    </li>
+                                    <li>
+                                        <div style="background-color:#0099FF"
+                                            class="text-center">
+                                            <h4>10/08/2021 - 13:07:04</h4>
+                                        </div>
+                                        <a href="index.html">>>[THÔNG BÁO] Thông
+                                            báo về việc cho phép hoạt đông trở
+                                            lại...</a>
+                                    </li>
+                                    <li>
+                                        <div style="background-color:#0099FF"
+                                            class="text-right"><a
+                                                href="index.html"
+                                                style="color: white;margin-right: 5px">>>xem
+                                                thêm</a></div>
+
+                                    </li>
+                                </ul>
+                            </marquee>
+                        </div>
+                    </div>
+                    <div class="col-xs-8" style="background-color:pink;"
+                        id="tab2">
+                        ffffffffffffffffffffffffffff
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid mt2" id="tab3">
+                <div class="row">
+                    <div class="col-xs-12" style="background-color:red;">
+                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+                    </div>
+                </div>
+
+                <!-- -------------end conten info--------------- -->
+
+                <footer id="ft" class="bg-light mt-2">
+                    <h6>
+                        Trang web được phát triển bởi
+                        <a
+                            href="https://www.facebook.com/VietAn.Tran.1606.CE001"
+                            style="color: #810505;">Trần Viết An</a>
+                    </h6>
+                    <h6>Trang web đang được triển khai trên nên tảng Github cá
+                        nhân</h6>
+                </footer>
+
+                <audio id="audio_p">
+                    <source src="./audio/GiaiDieuTuHao.mp3">
+                </audio>
+            </body>
+            <script>
+        var audio = document.getElementById("audio_p");
+        function funcplay() {
+          audio.play();
+        }
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    
+      </script>
+        </html>
