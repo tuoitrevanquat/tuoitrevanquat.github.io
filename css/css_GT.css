@@ -1,17 +1,22 @@
+#p_intro {
+  text-align: justify;
+  font-size: 13px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 @media screen and (min-width: 600px) {
-    #tab3{
-      display: none;
-    }
+  #tab3 {
+    display: none;
   }
-    @media screen and (max-width: 600px) {
-  /* .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block; */
-    #tab1{
-      display: none;
-    }
-    #tab2{
-      width: 100%;
-    }
+}
+
+@media screen and (max-width: 600px) {
+  #tab1 {
+    display: none;
   }
+
+  #tab2 {
+    width: 100%;
+  }
+}

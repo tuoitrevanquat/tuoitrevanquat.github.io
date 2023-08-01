@@ -12,6 +12,8 @@ function Dong_ho() {
   var Phut_hien_tai = new Date().getMinutes();
   var Giay_hien_tai = new Date().getSeconds();
   ngay.innerHTML = ngay_hien_tai;
+  if(ngay_hien_tai <10)  ngay.innerHTML = "0"+ngay_hien_tai;
+  else ngay.innerHTML = ngay_hien_tai;
   if (thang_hien_tai < 10) thang.innerHTML = "0" + thang_hien_tai;
   else thang.innerHTML = thang_hien_tai;
   nam.innerHTML = nam_hien_tai;

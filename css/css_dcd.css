@@ -1,0 +1,48 @@
+#p_intro {
+  text-align: justify;
+  font-size: 13px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#p_td {
+  font-style: italic;
+  text-align: right;
+  font-size: 13px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#sty_i {
+  width: 80%;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#panorama1 {
+  width: 80%;
+  height: 200px;
+}
+
+#panorama2 {
+  width: 80%;
+  height: 200px;
+}
+
+/* >600 ẩn t1 */
+@media screen and (min-width: 600px) {
+  #tab1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #tab2 {
+    display: none;
+  }
+
+  #tab3 {
+    width: 100%;
+  }
+}
