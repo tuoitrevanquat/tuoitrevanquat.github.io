@@ -1,6 +1,174 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <p>Hd3</p>
-    </body>
+<html lang="en">
+
+<head>
+    <title>Vân Quật - Hoạt Động - Thiện nguyện</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css_dcd.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstraps/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstraps/js/bootstrap.js">
+    <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="js/js.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid" style="display: flex; width: 100%;">
+        <img id="logoD" src="img/banner.png">
+    </div>
+    <div class="container-fluid">
+        <div style="color: black; text-align: center; height : auto; font-weight: 500; float: center;font-size: 10px;" id="time">
+            <span id="ngay"></span><span>/</span>
+            <span id="thang"></span><span>/</span>
+            <span id="nam"></span><span>,</span>
+            <span id="gio">00</span><span> :</span>
+            <span id="phut">00</span><span> :</span>
+            <span id="giay">00</span><span> </span>
+        </div>
+    </div>
+    <!-- //-------------menu------------------- -->
+    <div class="container-fluid mt-2 bg-light">
+        <div id="menu_center">
+            <div class="topnav" id="myTopnav">
+
+                <a href="index.html" id="mn" onclick="funcplay()">
+                    <img id="icon_mn" src="img/icon/home.png"> Trang Chủ
+                </a>
+                <a href="index_GT.html" id="mn">
+                    <img id="icon_mn" src="img/icon/info.png"> Giới Thiệu
+                </a>
+                <a href="index_HD.html" id="mn">
+                    <img id="icon_mn" src="img/icon/news.png"> Hoạt Động
+                </a>
+                <a href="index_DCD1.html" id="mn">
+                    <img id="icon_mn" src="img/icon/map.png"> Địa Chỉ Đỏ
+                </a>
+                <a href="index_lh.html" id="mn">
+                    <img id="icon_mn" src="img/icon/contact.png"> Liên hệ
+                </a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- //--------end-menu------------------- -->
+    <!-- ---------------carousel---------------- -->
+    <!-- ----------------------end carousel-------- -->
+    <!-- ---------------conten info------------- -->
+    <div class="container-fluid mt-2 bg-light">
+        <div class="row">
+            <div class="col-xs-12" id="tab3">
+                <h3 style="text-align: center;">Thiện nguyện: Bữa Ăn Yêu Thương</h3>
+                <p id="p_intro">
+                    🌻VÂN QUẬT MANG YÊU THƯƠNG - Nhận cảm mến🌻</p>
+                <div style="width: 100%; display:flex; justify-content:center;">
+                    <img src="img/tn1.jpg" id="sty_i">
+                </div>
+                <p id="p_intro">Lại là một chương trình ý nghĩa được nhiều bạn ĐVTN tham gia. Hôm nay mồng 1 tháng 6 âm lịch (18/7/2023), những tô mỳ chay trao tận tay người nhận ( bệnh nhân, người nhà bệnh nhân…) tại Trung tâm y tế Duy Xuyên.</p>
+                <p id="p_intro">Với sự ủng hộ của bà con, của mạnh thường quân đã tạo cho chúng con (em) bằng hành động thiết thực mang yêu thương, nhận cảm mến từ tất cả mọi người. Hôm nay với 300 suất Mỳ chay, nhìn mọi người chờ đợi, nhìn mọi người vui vẻ đón nhận,
+                    tụi con thật sự rất vui, và cảm thấy hạnh phúc thật nhiều khi đóng góp được những việc làm ý nghĩa với xã hội. Để sau này nhìn lại Thanh xuân không phí hoài.</p>
+                <div style="width: 100%; display:flex; justify-content:center;">
+                    <img src="img/tn3.jpg" id="sty_i">
+                </div>
+                <div style="width: 100%; display:flex; justify-content:center;">
+                    <img src="img/tn4.jpg" id="sty_i">
+                </div>
+                <p id="p_intro">🌻Chúng con xin cảm ơn thật nhiều đến gia đình chú Cảnh cô Anh, người đầu bếp tận tâm, chứa tụi con không những là những buổi tình nguyện, mà tất cả các ngày “báo 🤭” chúng con. 🌻</p>
+                <p id="p_intro"> Lời cuối cùng xin cảm ơn tất cả thật nhiều, thật nhiều. </p>
+                <div style="width: 100%; display:flex; justify-content:center;">
+                    <img src="img/tn2.jpg" id="sty_i">
+                </div>
+                <div style="width: 100%; display:flex; justify-content:center;">
+                    <img src="img/tn5.jpg" id="sty_i">
+                </div>
+                <p id="p_intro">📃Cô chú, anh chị muốn góp ít yêu thương cho chúng con (em) thực hiện được nhiều nhiều việc nữa, chúng em hoan hỉ xin nhận để lại được trao yêu thương nhận cảm mến. Xin liên lạc qua sđt: 076674220 - fb: Thu Viên ( PBT đoàn xã Duy Thành
+                    - BT Chi đoàn thôn Vân Quật</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- -------------end conten info--------------- -->
+    <!-- ---------footer-------- -->
+    <div class="container-fluid bg-light " id="ft_bg">
+        <div class="row">
+            <div class="col-xs-6 ">
+                <p id="ft_h">
+                    THÔNG TIN LIÊN HỆ
+                </p>
+                <ul id="ul_ft">
+                    <li><img src="img/icon/home.png" id="ic_ft1"> Đoàn TNCH Hồ Chí Minh Thôn Vân Quật
+                    </li>
+                    <li> <img src="img/icon/map.png" id="ic_ft1"> Thôn Vân Quật, Xã Duy Thành, Huyện Duy Xuyên, Tỉnh Quảng Nam
+                    </li>
+                    <li> <img src="img/icon/contact.png" id="ic_ft1"> doanthonvanquat@gmail.com
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-xs-6 ">
+                <p id="ft_h">
+                    THEO DÕI CHÚNG TÔI
+                </p>
+                <ul id="ul_ft">
+                    <li><img src="img/icon/fb.jpg" id="ic_ft">
+                        <a href="https://www.facebook.com/profile.php?id=100082551411057" style="color: #810505;">Tuổi Trẻ Vân Quật Duy
+                                Thành</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer id="ft" class="bg-light mt-2">
+        <h6>
+            Trang web được phát triển bởi
+            <a href="https://www.facebook.com/VietAn.Tran.1606.CE001" style="color: #810505;">Trần Viết An</a>
+        </h6>
+        <h6>Trang web đang được triển khai trên nên tảng Github cá nhân</h6>
+    </footer>
+    <audio id="audio_p">
+            <source src="./audio/GiaiDieuTuHao.mp3">
+        </audio>
+    <!-- ---------end footer-------- -->
+</body>
+<script>
+    pannellum.viewer('panorama1', {
+        "type": "equirectangular",
+        "panorama": "img/dcd_nt1.jpg",
+        "autoLoad": true
+    });
+    pannellum.viewer('panorama2', {
+        "type": "equirectangular",
+        // "panorama": "https://scontent.xx.fbcdn.net/v/t1.15752-9/358216011_185621684359638_2911792766507052994_n.jpg?stp=dst-jpg_s417x417&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=YBeXgQC74jMAX_Fkk2Z&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSw7QgaLeJa0M7z0RkiEcKWk-bDgHD2zkpPrQx8um0maw&oe=64ED5D7E",
+        "panorama": "img/dcd_nt2.jpg",
+        "autoLoad": true
+    });
+</script>
+<script>
+    var audio = document.getElementById("audio_p");
+
+    function funcplay() {
+        audio.play();
+    }
+
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
 </html>
