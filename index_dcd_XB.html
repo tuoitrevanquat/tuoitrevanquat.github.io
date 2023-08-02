@@ -1,329 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Vân Quật - Địa chỉ đỏ - Di tích vụ thảm sát xóm bầu</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/css.css">
-        <link rel="stylesheet" href="css/css_dcd.css">
 
-        <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css"
-            href="bootstraps/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="bootstraps/js/bootstrap.js">
-        <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-            crossorigin="anonymous" />
-        <script src="js/js.js"></script>
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-    </head>
-    <body>
+<head>
+    <title>Vân Quật - Địa chỉ đỏ - Di tích vụ thảm sát xóm bầu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css_dcd.css">
 
-        <div class="container-fluid" style="display: flex; width: 100%;">
-            <img id="logoD" src="img/banner.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstraps/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstraps/js/bootstrap.js">
+    <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="js/js.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid" style="display: flex; width: 100%;">
+        <img id="logoD" src="img/banner.png">
+    </div>
+    <div class="container-fluid">
+        <div style="color: black; text-align: center; height : auto; font-weight: 500; float: center;font-size: 10px;" id="time">
+            <span id="ngay"></span><span>/</span>
+            <span id="thang"></span><span>/</span>
+            <span id="nam"></span><span>,</span>
+            <span id="gio">00</span><span> :</span>
+            <span id="phut">00</span><span> :</span>
+            <span id="giay">00</span><span> </span>
         </div>
-        <div class="container-fluid">
-            <div
-                style="color: black; text-align: center; height : auto; font-weight: 500; float: center;font-size: 10px;"
-                id="time">
-                <span id="ngay"></span><span>/</span>
-                <span id="thang"></span><span>/</span>
-                <span id="nam"></span><span>,</span>
-                <span id="gio">00</span><span> :</span>
-                <span id="phut">00</span><span> :</span>
-                <span id="giay">00</span><span> </span>
+    </div>
+    <!-- //-------------menu------------------- -->
+    <div class="container-fluid mt-2 bg-light">
+        <div id="menu_center">
+            <div class="topnav" id="myTopnav">
+
+                <a href="index.html" id="mn" onclick="funcplay()">
+                    <img id="icon_mn" src="img/icon/home.png"> Trang Chủ
+                </a>
+                <a href="index_GT.html" id="mn">
+                    <img id="icon_mn" src="img/icon/info.png"> Giới Thiệu
+                </a>
+                <a href="index_HD.html" id="mn">
+                    <img id="icon_mn" src="img/icon/news.png"> Hoạt Động
+                </a>
+                <a href="index_DCD1.html" id="mn">
+                    <img id="icon_mn" src="img/icon/map.png"> Địa Chỉ Đỏ
+                </a>
+                <a href="index_lh.html" id="mn">
+                    <img id="icon_mn" src="img/icon/contact.png"> Liên hệ
+                </a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </div>
-        <!-- //-------------menu------------------- -->
-        <div class="container-fluid mt-2 bg-light">
-            <div id="menu_center">
-                <div class="topnav" id="myTopnav">
+    </div>
 
-                    <a href="index.html" id="mn" onclick="funcplay()">
-                        <img id="icon_mn" src="img/icon/home.png">
-                        Trang Chủ
-                    </a>
-                    <a href="index_GT.html" id="mn">
-                        <img id="icon_mn" src="img/icon/info.png">
-                        Giới Thiệu
-                    </a>
-                    <a href="index_HD.html" id="mn">
-                        <img id="icon_mn" src="img/icon/news.png">
-                        Hoạt Động
-                    </a>
-                    <a href="index_DCD1.html" id="mn">
-                        <img id="icon_mn" src="img/icon/map.png">
-                        Địa Chỉ Đỏ
-                    </a>
-                    <a href="index_lh.html" id="mn">
-                        <img id="icon_mn" src="img/icon/contact.png">
-                        Liên hệ
-                    </a>
-
-                    <a href="javascript:void(0);" class="icon"
-                        onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
+    <!-- //--------end-menu------------------- -->
+    <!-- ---------------carousel---------------- -->
+    <!-- ----------------------end carousel-------- -->
+    <!-- ---------------conten info------------- -->
+    <div class="container-fluid mt-2" id="tab1">
+        <div id="fr_map">
+            <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                <p style="text-align: center; color: white; font-weight: 600; margin-bottom: 5px; margin-top: 3px;">Bảng đồ đi đến địa điểm: Di tích thảm sát xóm Bàu</p>
             </div>
-        </div>
-
-        <!-- //--------end-menu------------------- -->
-        <!-- ---------------carousel---------------- -->
-        <!-- ----------------------end carousel-------- -->
-        <!-- ---------------conten info------------- -->
-        <div class="container-fluid mt-2" id="tab1">
-            <div id="fr_map">
-                <div
-                    style="display: flex; justify-content: center; align-items: center; width: 100%;">
-                    <p
-                        style="text-align: center; color: white; font-weight: 600; margin-bottom: 5px; margin-top: 3px;">Bảng
-                        đồ đi đến địa điểm: Di tích thảm sát xóm Bàu</p>
-                </div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30708.50040185922!2d108.30045798689882!3d15.827003817230661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314209528168a5c5%3A0xc36d3fcadc35d45b!2zRHV5IFRow6BuaCwgRHV5IFh1ecOqbiBEaXN0cmljdCwgUXXhuqNuZyBOYW0sIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1690981116705!5m2!1sen!2s"
-                    width="100%" style="border:0;" allowfullscreen
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30708.50040185922!2d108.30045798689882!3d15.827003817230661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314209528168a5c5%3A0xc36d3fcadc35d45b!2zRHV5IFRow6BuaCwgRHV5IFh1ecOqbiBEaXN0cmljdCwgUXXhuqNuZyBOYW0sIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1690981116705!5m2!1sen!2s"
+                width="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-            </div>
-
         </div>
-        <div class="container-fluid mt-2 bg-light">
-            <div class="row">
-                <div class="col-xs-3" id="tab2">
-                    <div id="fr_map">
-                        <div
-                            style="display: flex; justify-content: center; align-items: center; width: 100%;">
-                            <p
-                                style="text-align: justify; color: white; font-weight: 600; margin: 5px;">Bảng
-                                đồ đi đến địa điểm: Di tích thảm sát xóm Bàu</p>
-                        </div>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30708.50040185922!2d108.30045798689882!3d15.827003817230661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314209528168a5c5%3A0xc36d3fcadc35d45b!2zRHV5IFRow6BuaCwgRHV5IFh1ecOqbiBEaXN0cmljdCwgUXXhuqNuZyBOYW0sIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1690981116705!5m2!1sen!2s"
-                            width="100%" style="border:0;" allowfullscreen
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
+
+    </div>
+    <div class="container-fluid mt-2 bg-light">
+        <div class="row">
+            <div class="col-xs-3" id="tab2">
+                <div id="fr_map">
+                    <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                        <p style="text-align: justify; color: white; font-weight: 600; margin: 5px;">Bảng đồ đi đến địa điểm: Di tích thảm sát xóm Bàu</p>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30708.50040185922!2d108.30045798689882!3d15.827003817230661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314209528168a5c5%3A0xc36d3fcadc35d45b!2zRHV5IFRow6BuaCwgRHV5IFh1ecOqbiBEaXN0cmljdCwgUXXhuqNuZyBOYW0sIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1690981116705!5m2!1sen!2s"
+                        width="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-                    </div>
-                    <p style="margin: 5px;">Vị trí: Thôn Vân Quật, Xã Duy
-                        Thành,Duy Xuyên, Quảng Nam, Việt Nam</p>
                 </div>
-                <div class="col-xs-9" id="tab3">
-                    <h3 style="text-align: center;">Di tích: Vụ thảm sát xóm Bàu</h3>
-                    <p id="p_intro">Trong những năm chiến tranh khốc liệt từ
-                        1967 - 1973, là một trong những đội quân chư hầu đánh
-                        thuê của Mỹ, quân Nam Triều Tiên (còn có tên Nam Hàn,
-                        Đại Hàn) thuộc Sư đoàn lính thủy đánh bộ Rồng Xanh đã
-                        được giao nhiệm vụ chiếm đóng một số địa phương ở
-                        Quảng Nam.
-                    </p>
-                    <p id="p_intro" style="font-style: italic;">Toàn cảnh tại
-                        khu Di tích thảm sát xóm Bàu</p>
-                    <div
-                        style="width: 100%; display:flex; justify-content:center;">
-                        <div id="panorama1"></div>
-                    </div>
-
-                    <p id="p_intro">Tại địa bàn huyện Duy Xuyên, một đơn vị
-                        thuộc sư đoàn Thanh Long (Rồng Xanh) đã lập đồn
-                        bốt trấn giữ thành một dải phòng ngự chiến lược từ
-                        Tây sang Đông để phối hợp với quân Việt Nam Cộng Hòa
-                        liên tục hành quân càn quét, bắn phá vùng giải
-                        phóng, nhằm mở rộng vùng chiếm đóng và bắn giết,
-                        đàn áp các lực lượng cách mạng.
-                    </p>
-
-                    <p id="p_intro">Tại Nam Phước, một đồn lớn cấp tiểu đoàn
-                        được thiết lập,
-                        có trang bị pháo 105 ly cùng các khí tài quân sự tối tân
-                        nhằm khống chế toàn bộ khu Đông và bảo vệ tuyến giao
-                        thông huyết mạch đoạn từ cầu Câu Lâu đến cầu Bà Rén. Để
-                        triệt phá âm mưu của địch, du kích xã, bộ đội huyện của
-                        ta xác định địa bàn này là mục tiêu tấn công thường
-                        xuyên nhằm tiêu hao sinh lực địch, bảo vệ vùng
-                        giải phóng và bảo vệ nhân dân</p>
-                    <p id="p_intro">Trước tình hình bị uy hiếp nghiêm trọng,
-                        quân Nam Triều Tiên được sự hỗ trợ tích cực từ ông chủ
-                        Mỹ và quân Việt Nam Cộng Hòa đã điên cuồng tăng cường
-                        hành quân càn quét và bắn phá bừa bãi giết hại
-                        nhiều người, chủ yếu là người già, phụ nữ và trẻ
-                        em. Nhiều trận chúng độc lập tác chiến với quy mô lớn
-                        nên mỗi lần đến các địa phương, chúng đốt nhà, cày
-                        ủi ruộng vườn, hãm hiếp phụ nữ và thực hiện nhiều
-                        vụ thảm sát trên địa bàn toàn huyện với phương châm diệt
-                        Việt Cộng để lãnh thưởng dù chỉ là thường dân cũng cắt
-                        tai xỏ xâu làm bằng chứng. Sau này qua tài liệu và hồi
-                        cố đều chung nhận xét đây là đội quân vô cùng dã man, vô
-                        nhân tính.</p>
-                    <p id="p_intro">Do xã Duy Thành (Xuyên Tân cũ) là căn cứ
-                        kháng chiến nên địch không đóng đồn được. Quân Nam
-                        Hàn thường xuyên mở các cuộc hành quân càn quét
-                        vùng giải phóng Xuyên Tân để hạn chế sự tiến
-                        công của lực lượng cách mạng; mỗi lần càn quét, bọn
-                        chúng bắn pháo cả đêm trước, cày nát ruộng vườn, phá hủy
-                        nhà cửa rồi hôm sau mới đi càn.</p>
-                    <div
-                        style="width: 100%; display:flex; justify-content:center;">
-                        <img
-                            src="img/dcd_xb.jpg" id="sty_i">
-                    </div>
-
-                    <p id="p_intro">Ngày 19/01/1968, khoảng một đại đội
-                        lính Nam Triều Tiên hành quân dò mìn và mở đường
-                        từ Nam Phước vào cầu Bà Rén, rồi băng đồng ruộng
-                        đến Xóm Bàu thì bị du kích Xuyên Tân bắn tỉa. Sau
-                        khi lùng sục nhưng không tìm thấy du kích, chúng
-                        bắt tất cả nhân dân trong xóm tập trung lại rồi
-                        xả súng bắn chết tại chỗ 28 người, làm bị
-                        thương 10 người. Xong cuộc tàn sát, chúng tiếp tục
-                        đốt sạch nhà cửa của dân. Bà Trương Thị Xuyến và
-                        hai cháu nhỏ may mắn sống sót trong vụ này, sau trở
-                        thành nhân chứng tố cáo tội ác của địch trước công luận,
-                        tạo nên làn sóng căm phẫn tột cùng trong nhân dân.</p>
-                    <p id="p_intro">Sân nhà bà Trương Thị Xuyến hôm nay còn
-                        đó dấu tích xưa quân lính Nam Triều Tiên bắt người
-                        tập trung đến để ra tay tàn sát dã man 28 sinh linh
-                        vô tội. Do chúng dùng nhiều súng liên thanh nên nhiều
-                        người bị xé nát thân thể. Nơi này cách bàu nước chừng
-                        3m, nên máu trẻ già, người lớn, phụ nữ, trẻ em chảy
-                        nhuộm đỏ một vùng bàu nước. Cả xóm tiêu điều bốc mùi
-                        tanh của máu và mùi nhà, mùi vật dụng bị cháy. Theo lời
-                        kể của của nhiều người ở các làng xã bên được huy động
-                        đến để chôn cất thi hài dân thì hàng mấy tháng sau đó dù
-                        mưa hay nắng vẫn không xóa nhòa được nỗi ghê rợn kinh
-                        hoàng. </p>
-                    <div
-                        style="width: 100%; display:flex; justify-content:center;"><img
-                            src="img/dcd_xb2.jpg" id="sty_i">
-                    </div>
-                    <p id="p_intro">Để ghi dấu nỗi đau thương, những cống hiến
-                        của nhân dân Xóm Bàu góp máu xương vào cuộc chiến tranh
-                        vệ quốc vĩ đại và khắc sâu lòng căm thù cho các thế hệ
-                        sau, tháng 1/2003, Đảng uỷ, Ủy ban nhân dân xã cùng
-                        bà con trong xóm đã xây dựng bia tưởng niệm vụ
-                        thảm sát tập thể này với kinh phí 17 triệu đồng.
-                        Để phù hợp địa thế thấp lụt, bia đặt tại mép đường
-                        bêtông, cách địa điểm đó về phía Bắc chừng 50m.
-
-                        Mặt trước, nội dung bia ghi: “Tại đây, ngày 19 tháng
-                        1 năm 1968 quân Nam Triều Tiên đã tàn sát dã man 28
-                        người trong đó có 6 cụ già, 9 phụ nữ và 13 trẻ
-                        em”. Mặt sau, bia dành ghi tên những nạn nhân bị
-                        giết hại.</p>
-                    <p id="p_intro">Trong thời gian tham chiến ở Nam Việt Nam,
-                        theo giáo sư người Hàn Quốc Heonik Kwon, tác giả của
-                        nhiều cuốn sách nổi tiếng về chiến tranh Việt Nam, đã có
-                        trên 43 vụ thảm sát đẫm máu do binh lính Nam Triều Tiên
-                        thực hiện tại chiến trường được Mỹ giao là Miền Trung
-                        Việt Nam, trong đó có ít nhất 13 vụ giết trên 200 người.
-                        Cao điểm là vụ xã Bình Hòa Quảng Ngãi có đến 430 người.
-                        Xóm Bàu cùng các vụ Duy Hải, Duy Nghĩa, Duy Trinh (Quảng
-                        Nam) có tên trong danh sách này đều được coi ở mức độ
-                        khủng khiếp vì bị xóa sổ cả xóm chỉ còn sót lại vài
-                        người. </p>
-                    
-                    <p id="p_intro">Năm tháng qua đi, những đau thương ở Xóm Bàu
-                        đã là tấm bia khắc sâu muôn thuở vào tâm khảm mọi người
-                        cùng tấm bia đá tưởng niệm vụ thảm sát nhắc nhở những
-                        thế hệ sau về một thời bom đạn, một thời chiến tranh,
-                        một thời xương trắng máu đào đã đổ. Mỗi người trong
-                        chúng ta hôm nay và mai sau thấm thía cái giá của hòa
-                        bình, độc lập, thống nhất; để từ đó càng yêu quý quê
-                        hương chung tay gìn giữ non sông đất nước. </p>
-                    <p id="p_intro">Bia tưởng niệm vụ thảm sát Xóm Bàu được Ủy
-                        ban nhân dân tỉnh Quảng Nam ban hành Quyết định số
-                        558/QĐ/UBND/2007, ngày 8/2/2007, xếp hạng di tích cấp
-                        tỉnh.</p>
-                    <p id="p_td">Trích dẫn từ nguồn: <a
-                            href="https://duyxuyen.quangnam.gov.vn/webcenter/portal/duyxuyen/pages_tin-tuc/chi-tiet-tin?dDocName=PORTAL338714">duyxuyen.quangnam.gov.vn</a></p>
-
+                <p style="margin: 5px;">Vị trí: Thôn Vân Quật, Xã Duy Thành,Duy Xuyên, Quảng Nam, Việt Nam</p>
+            </div>
+            <div class="col-xs-9" id="tab3">
+                <h3 style="text-align: center;">Di tích: Vụ thảm sát xóm Bàu</h3>
+                <p id="p_intro">Trong những năm chiến tranh khốc liệt từ 1967 - 1973, là một trong những đội quân chư hầu đánh thuê của Mỹ, quân Nam Triều Tiên (còn có tên Nam Hàn, Đại Hàn) thuộc Sư đoàn lính thủy đánh bộ Rồng Xanh đã được giao nhiệm vụ chiếm đóng
+                    một số địa phương ở Quảng Nam.
+                </p>
+                <p id="p_intro" style="font-style: italic;">Toàn cảnh tại khu Di tích thảm sát xóm Bàu</p>
+                <div style="width: 100%; display:flex; justify-content:center;">
+                    <div id="panorama1"></div>
                 </div>
+
+                <p id="p_intro">Tại địa bàn huyện Duy Xuyên, một đơn vị thuộc sư đoàn Thanh Long (Rồng Xanh) đã lập đồn bốt trấn giữ thành một dải phòng ngự chiến lược từ Tây sang Đông để phối hợp với quân Việt Nam Cộng Hòa liên tục hành quân càn quét,
+                    bắn phá vùng giải phóng, nhằm mở rộng vùng chiếm đóng và bắn giết, đàn áp các lực lượng cách mạng.
+                </p>
+
+                <p id="p_intro">Tại Nam Phước, một đồn lớn cấp tiểu đoàn được thiết lập, có trang bị pháo 105 ly cùng các khí tài quân sự tối tân nhằm khống chế toàn bộ khu Đông và bảo vệ tuyến giao thông huyết mạch đoạn từ cầu Câu Lâu đến cầu Bà Rén. Để triệt phá âm
+                    mưu của địch, du kích xã, bộ đội huyện của ta xác định địa bàn này là mục tiêu tấn công thường xuyên nhằm tiêu hao sinh lực địch, bảo vệ vùng giải phóng và bảo vệ nhân dân</p>
+                <p id="p_intro">Trước tình hình bị uy hiếp nghiêm trọng, quân Nam Triều Tiên được sự hỗ trợ tích cực từ ông chủ Mỹ và quân Việt Nam Cộng Hòa đã điên cuồng tăng cường hành quân càn quét và bắn phá bừa bãi giết hại nhiều người, chủ yếu là người
+                    già, phụ nữ và trẻ em. Nhiều trận chúng độc lập tác chiến với quy mô lớn nên mỗi lần đến các địa phương, chúng đốt nhà, cày ủi ruộng vườn, hãm hiếp phụ nữ và thực hiện nhiều vụ thảm sát trên địa bàn toàn huyện với phương
+                    châm diệt Việt Cộng để lãnh thưởng dù chỉ là thường dân cũng cắt tai xỏ xâu làm bằng chứng. Sau này qua tài liệu và hồi cố đều chung nhận xét đây là đội quân vô cùng dã man, vô nhân tính.</p>
+                <p id="p_intro">Do xã Duy Thành (Xuyên Tân cũ) là căn cứ kháng chiến nên địch không đóng đồn được. Quân Nam Hàn thường xuyên mở các cuộc hành quân càn quét vùng giải phóng Xuyên Tân để hạn chế sự tiến công của lực lượng cách
+                    mạng; mỗi lần càn quét, bọn chúng bắn pháo cả đêm trước, cày nát ruộng vườn, phá hủy nhà cửa rồi hôm sau mới đi càn.</p>
+                <div style="width: 100%; display:flex; justify-content:center;">
+                    <img src="img/dcd_xb.jpg" id="sty_i">
+                </div>
+
+                <p id="p_intro">Ngày 19/01/1968, khoảng một đại đội lính Nam Triều Tiên hành quân dò mìn và mở đường từ Nam Phước vào cầu Bà Rén, rồi băng đồng ruộng đến Xóm Bàu thì bị du kích Xuyên Tân bắn tỉa. Sau khi lùng sục nhưng không
+                    tìm thấy du kích, chúng bắt tất cả nhân dân trong xóm tập trung lại rồi xả súng bắn chết tại chỗ 28 người, làm bị thương 10 người. Xong cuộc tàn sát, chúng tiếp tục đốt sạch nhà cửa của dân. Bà Trương Thị
+                    Xuyến và hai cháu nhỏ may mắn sống sót trong vụ này, sau trở thành nhân chứng tố cáo tội ác của địch trước công luận, tạo nên làn sóng căm phẫn tột cùng trong nhân dân.</p>
+                <p id="p_intro">Sân nhà bà Trương Thị Xuyến hôm nay còn đó dấu tích xưa quân lính Nam Triều Tiên bắt người tập trung đến để ra tay tàn sát dã man 28 sinh linh vô tội. Do chúng dùng nhiều súng liên thanh nên nhiều người bị xé nát thân thể. Nơi
+                    này cách bàu nước chừng 3m, nên máu trẻ già, người lớn, phụ nữ, trẻ em chảy nhuộm đỏ một vùng bàu nước. Cả xóm tiêu điều bốc mùi tanh của máu và mùi nhà, mùi vật dụng bị cháy. Theo lời kể của của nhiều người ở các làng xã bên được
+                    huy động đến để chôn cất thi hài dân thì hàng mấy tháng sau đó dù mưa hay nắng vẫn không xóa nhòa được nỗi ghê rợn kinh hoàng. </p>
+                <div style="width: 100%; display:flex; justify-content:center;"><img src="img/dcd_xb2.jpg" id="sty_i">
+                </div>
+                <p id="p_intro">Để ghi dấu nỗi đau thương, những cống hiến của nhân dân Xóm Bàu góp máu xương vào cuộc chiến tranh vệ quốc vĩ đại và khắc sâu lòng căm thù cho các thế hệ sau, tháng 1/2003, Đảng uỷ, Ủy ban nhân dân xã cùng bà con trong xóm đã xây dựng
+                    bia tưởng niệm vụ thảm sát tập thể này với kinh phí 17 triệu đồng. Để phù hợp địa thế thấp lụt, bia đặt tại mép đường bêtông, cách địa điểm đó về phía Bắc chừng 50m. Mặt trước, nội dung bia ghi: “Tại đây, ngày
+                    19 tháng 1 năm 1968 quân Nam Triều Tiên đã tàn sát dã man 28 người trong đó có 6 cụ già, 9 phụ nữ và 13 trẻ em”. Mặt sau, bia dành ghi tên những nạn nhân bị giết hại.</p>
+                <p id="p_intro">Trong thời gian tham chiến ở Nam Việt Nam, theo giáo sư người Hàn Quốc Heonik Kwon, tác giả của nhiều cuốn sách nổi tiếng về chiến tranh Việt Nam, đã có trên 43 vụ thảm sát đẫm máu do binh lính Nam Triều Tiên thực hiện tại chiến trường
+                    được Mỹ giao là Miền Trung Việt Nam, trong đó có ít nhất 13 vụ giết trên 200 người. Cao điểm là vụ xã Bình Hòa Quảng Ngãi có đến 430 người. Xóm Bàu cùng các vụ Duy Hải, Duy Nghĩa, Duy Trinh (Quảng Nam) có tên trong danh sách này đều
+                    được coi ở mức độ khủng khiếp vì bị xóa sổ cả xóm chỉ còn sót lại vài người. </p>
+
+                <p id="p_intro">Năm tháng qua đi, những đau thương ở Xóm Bàu đã là tấm bia khắc sâu muôn thuở vào tâm khảm mọi người cùng tấm bia đá tưởng niệm vụ thảm sát nhắc nhở những thế hệ sau về một thời bom đạn, một thời chiến tranh, một thời xương trắng máu đào
+                    đã đổ. Mỗi người trong chúng ta hôm nay và mai sau thấm thía cái giá của hòa bình, độc lập, thống nhất; để từ đó càng yêu quý quê hương chung tay gìn giữ non sông đất nước. </p>
+                <p id="p_intro">Bia tưởng niệm vụ thảm sát Xóm Bàu được Ủy ban nhân dân tỉnh Quảng Nam ban hành Quyết định số 558/QĐ/UBND/2007, ngày 8/2/2007, xếp hạng di tích cấp tỉnh.
+                </p>
+                <p id="p_td">Trích dẫn từ nguồn: <a href="https://duyxuyen.quangnam.gov.vn/webcenter/portal/duyxuyen/pages_tin-tuc/chi-tiet-tin?dDocName=PORTAL338714">duyxuyen.quangnam.gov.vn</a></p>
+
             </div>
         </div>
-        <!-- -------------end conten info--------------- -->
-        <!-- ---------footer-------- -->
-        <div class="container-fluid bg-light " id="ft_bg">
-            <div class="row">
-                <div class="col-xs-6 ">
-                    <p id="ft_h">
-                        THÔNG TIN LIÊN HỆ
-                    </p>
-                    <ul id="ul_ft">
-                        <li><img src="img/icon/home.png" id="ic_ft1">
-                            Đoàn TNCH Hồ Chí Minh Thôn Vân Quật
-                        </li>
-                        <li> <img src="img/icon/map.png" id="ic_ft1">
-                            Thôn Vân Quật, Xã Duy Thành, Huyện Duy Xuyên,
-                            Tỉnh
-                            Quảng Nam
-                        </li>
-                        <li> <img src="img/icon/contact.png" id="ic_ft1">
-                            doanthonvanquat@gmail.com
-                        </li>
-                    </ul>
+    </div>
+    <!-- -------------end conten info--------------- -->
+    <!-- ---------footer-------- -->
+    <div class="container-fluid bg-light " id="ft_bg">
+        <div class="row">
+            <div class="col-xs-6 ">
+                <p id="ft_h">
+                    THÔNG TIN LIÊN HỆ
+                </p>
+                <ul id="ul_ft">
+                    <li><img src="img/icon/home.png" id="ic_ft1"> Đoàn TNCS Hồ Chí Minh Thôn Vân Quật
+                    </li>
+                    <li> <img src="img/icon/map.png" id="ic_ft1"> Thôn Vân Quật, Xã Duy Thành, Huyện Duy Xuyên, Tỉnh Quảng Nam
+                    </li>
+                    <li> <img src="img/icon/contact.png" id="ic_ft1"> doanthonvanquat@gmail.com
+                    </li>
+                </ul>
 
-                </div>
-                <div class="col-xs-6 ">
-                    <p id="ft_h">
-                        THEO DÕI CHÚNG TÔI
-                    </p>
-                    <ul id="ul_ft">
-                        <li><img src="img/icon/fb.jpg" id="ic_ft">
-                            <a
-                                href="https://www.facebook.com/profile.php?id=100082551411057"
-                                style="color: #810505;">Tuổi Trẻ Vân Quật
+            </div>
+            <div class="col-xs-6 ">
+                <p id="ft_h">
+                    THEO DÕI CHÚNG TÔI
+                </p>
+                <ul id="ul_ft">
+                    <li><img src="img/icon/fb.jpg" id="ic_ft">
+                        <a href="https://www.facebook.com/profile.php?id=100082551411057" style="color: #810505;">Tuổi Trẻ Vân Quật
                                 Duy
                                 Thành</a> </li>
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
-        <footer id="ft" class="bg-light mt-2">
-            <h6>
-                Trang web được phát triển bởi
-                <a href="https://www.facebook.com/VietAn.Tran.1606.CE001"
-                    style="color: #810505;">Trần Viết An</a>
-            </h6>
-            <h6>Trang web đang được triển khai trên nên tảng Github cá nhân</h6>
-        </footer>
-        <audio id="audio_p">
+    </div>
+    <footer id="ft" class="bg-light mt-2">
+        <h6>
+            Trang web được phát triển bởi
+            <a href="https://www.facebook.com/VietAn.Tran.1606.CE001" style="color: #810505;">Trần Viết An</a>
+        </h6>
+        <h6>Trang web đang được triển khai trên nên tảng Github cá nhân</h6>
+    </footer>
+    <audio id="audio_p">
             <source src="./audio/GiaiDieuTuHao.mp3">
         </audio>
-        <!-- ---------end footer-------- -->
-    </body>
-    <script>
-        pannellum.viewer('panorama1', {
-            "type": "equirectangular",
-            "panorama": "img/dcd_xb1.jpg",
-            "autoLoad": true
-        });
+    <!-- ---------end footer-------- -->
+</body>
+<script>
+    pannellum.viewer('panorama1', {
+        "type": "equirectangular",
+        "panorama": "img/dcd_xb1.jpg",
+        "autoLoad": true
+    });
+</script>
+<script>
+    var audio = document.getElementById("audio_p");
 
-    </script>
-    <script>
-        var audio = document.getElementById("audio_p");
-        function funcplay() {
-          audio.play();
+    function funcplay() {
+        audio.play();
+    }
+
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
         }
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    
-      </script>
+    }
+</script>
+
 </html>

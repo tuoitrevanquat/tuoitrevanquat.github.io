@@ -1,242 +1,212 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <title>Vân Quật - Địa chỉ đỏ</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/css.css">
-        <link rel="stylesheet" href="css/css_GT.css">
 
-        <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css"
-            href="bootstraps/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="bootstraps/js/bootstrap.js">
-        <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-            crossorigin="anonymous" />
-        <script src="js/js.js"></script>
+<head>
+    <title>Vân Quật - Địa chỉ đỏ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css_GT.css">
 
-    </head>
-    <body>
-        <div class="container-fluid" style="display: flex; width: 100%;">
-            <img id="logoD" src="img/banner.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstraps/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstraps/js/bootstrap.js">
+    <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="js/js.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid" style="display: flex; width: 100%;">
+        <img id="logoD" src="img/banner.png">
+    </div>
+    <div class="container-fluid">
+        <div style="color: black; text-align: center; height : auto; font-weight: 500; float: center;font-size: 10px;" id="time">
+            <span id="ngay"></span><span>/</span>
+            <span id="thang"></span><span>/</span>
+            <span id="nam"></span><span>,</span>
+            <span id="gio">00</span><span> :</span>
+            <span id="phut">00</span><span> :</span>
+            <span id="giay">00</span><span> </span>
         </div>
-        <div class="container-fluid">
-            <div
-                style="color: black; text-align: center; height : auto; font-weight: 500; float: center;font-size: 10px;"
-                id="time">
-                <span id="ngay"></span><span>/</span>
-                <span id="thang"></span><span>/</span>
-                <span id="nam"></span><span>,</span>
-                <span id="gio">00</span><span> :</span>
-                <span id="phut">00</span><span> :</span>
-                <span id="giay">00</span><span> </span>
-            </div>
-        </div>
-        <!-- //-------------menu------------------- -->
-        <div class="container-fluid mt-2 bg-light">
-            <div id="menu_center">
-                <div class="topnav" id="myTopnav">
+    </div>
+    <!-- //-------------menu------------------- -->
+    <div class="container-fluid mt-2 bg-light">
+        <div id="menu_center">
+            <div class="topnav" id="myTopnav">
 
-                    <a id="mn" href="index.html">
-                        <img id="icon_mn" src="img/icon/home.png">
-                        Trang Chủ
-                    </a>
-                    <a href="index_GT.html" id="mn">
-                        <img id="icon_mn" src="img/icon/info.png">
-                        Giới Thiệu
-                    </a>
-                    <a href="index_HD.html" id="mn">
-                        <img id="icon_mn" src="img/icon/news.png">
-                        Hoạt Động
-                    </a>
-                    <a id="mn">
-                        <img id="icon_mn" src="img/icon/map.png">
-                        Địa Chỉ Đỏ
-                    </a>
-                    <a href="index_lh.html" id="mn">
-                        <img id="icon_mn" src="img/icon/contact.png">
-                        Liên hệ
-                    </a>
-
-                    <a href="javascript:void(0);" class="icon"
-                        onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- //--------end-menu------------------- -->
-        <!-- ---------------carousel---------------- -->
-        <div class="container-fluid mt-2">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target data-slide-to="0" class="active"></li>
-                    <li data-target data-slide-to="1"></li>
-                    <li data-target data-slide-to="2"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" id="carousel_img">
-                    <div class="item active">
-                        <img src="img/dtvq6.jpg" alt="Los Angeles"
-                            style="width:100%;">
-                    </div>
-                    <div class="item">
-                        <img src="img/dtvq5.jpg" alt="Chicago"
-                            style="width:100%;">
-                    </div>
-                    <div class="item">
-                        <img src="img/dtvq4.jpg" alt="New york"
-                            style="width:100%;">
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#myCarousel"
-                    data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
+                <a id="mn" href="index.html">
+                    <img id="icon_mn" src="img/icon/home.png"> Trang Chủ
                 </a>
-                <a class="right carousel-control" href="#myCarousel"
-                    data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
+                <a href="index_GT.html" id="mn">
+                    <img id="icon_mn" src="img/icon/info.png"> Giới Thiệu
+                </a>
+                <a href="index_HD.html" id="mn">
+                    <img id="icon_mn" src="img/icon/news.png"> Hoạt Động
+                </a>
+                <a id="mn">
+                    <img id="icon_mn" src="img/icon/map.png"> Địa Chỉ Đỏ
+                </a>
+                <a href="index_lh.html" id="mn">
+                    <img id="icon_mn" src="img/icon/contact.png"> Liên hệ
+                </a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
                 </a>
             </div>
         </div>
-        <!-- --------news----------- -->
-        <div class="container-fluid" id="sty_ne">
-            <p id="p_ne">Bản đồ số hóa địa phận xã Duy Thành</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30708.50040185922!2d108.30045798689882!3d15.827003817230661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314209528168a5c5%3A0xc36d3fcadc35d45b!2zRHV5IFRow6BuaCwgRHV5IFh1ecOqbiBEaXN0cmljdCwgUXXhuqNuZyBOYW0sIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1690981116705!5m2!1sen!2s"
-                width="100%" style="border:0;" allowfullscreen
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
+    </div>
+    <!-- //--------end-menu------------------- -->
+    <!-- ---------------carousel---------------- -->
+    <div class="container-fluid mt-2">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target data-slide-to="0" class="active"></li>
+                <li data-target data-slide-to="1"></li>
+                <li data-target data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" id="carousel_img">
+                <div class="item active">
+                    <img src="img/dtvq6.jpg" alt="Los Angeles" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="img/dtvq5.jpg" alt="Chicago" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="img/dtvq4.jpg" alt="New york" style="width:100%;">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- --------news----------- -->
+    <div class="container-fluid" id="sty_ne">
+        <p id="p_ne">Bản đồ số hóa địa phận xã Duy Thành</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30708.50040185922!2d108.30045798689882!3d15.827003817230661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314209528168a5c5%3A0xc36d3fcadc35d45b!2zRHV5IFRow6BuaCwgRHV5IFh1ecOqbiBEaXN0cmljdCwgUXXhuqNuZyBOYW0sIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1690981116705!5m2!1sen!2s"
+            width="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-        </div>
-        <!-- --------endnews----------- -->
+    </div>
+    <!-- --------endnews----------- -->
 
-        <!-- --------mapred----------- -->
-        <div class="container-fluid" id="sty_mapred">
-            <p id="p_ne">Số hóa bản đồ địa chỉ đỏ</p>
-            <div class="row">
-                <div class="col-xs-2" id="dis1">
-                </div>
-                <div class="col-xs-8" id="dis2">
-                    <!-- ----car------ -->
-                    <div class="row">
-                        <div class="col-xs-4">
-                            <div class="card" id="card_mapred">
-                                <img class="card-img-top" src="img/dcd_vq2.jpg"
-                                    id="img_card">
-                                <div class="card-body">
-                                    <h6><a href="index_dcd_CTVQ.html">Di tích
+    <!-- --------mapred----------- -->
+    <div class="container-fluid" id="sty_mapred">
+        <p id="p_ne">Số hóa bản đồ địa chỉ đỏ</p>
+        <div class="row">
+            <div class="col-xs-2" id="dis1">
+            </div>
+            <div class="col-xs-8" id="dis2">
+                <!-- ----car------ -->
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="card" id="card_mapred">
+                            <img class="card-img-top" src="img/dcd_vq2.jpg" id="img_card">
+                            <div class="card-body">
+                                <h6><a href="index_dcd_CTVQ.html">Di tích
                                             chiến thắng Vân Quật</a></h6>
-                                </div>
                             </div>
                         </div>
-                        <div class="col-xs-4">
-                            <div class="card" id="card_mapred">
-                                <img class="card-img-top" src="img/dcd_nt0.jpg"
-                                    id="img_card">
-                                <div class="card-body">
-                                    <h6><a href="index_dcd_NTLS.html">Nghĩa
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="card" id="card_mapred">
+                            <img class="card-img-top" src="img/dcd_nt0.jpg" id="img_card">
+                            <div class="card-body">
+                                <h6><a href="index_dcd_NTLS.html">Nghĩa
                                             trang liệt sĩ xã Duy
                                             Thành</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="card" id="card_mapred">
-                                <img class="card-img-top" src="img/dcd_xb.jpg"
-                                    id="img_card">
-                                <div class="card-body">
-                                    <h6><a href="index_dcd_XB.html">Di tích vụ
-                                            thảm sát xóm Bàu</a></h6>
-                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- -----end ----car------ -->
+                    <div class="col-xs-4">
+                        <div class="card" id="card_mapred">
+                            <img class="card-img-top" src="img/dcd_xb.jpg" id="img_card">
+                            <div class="card-body">
+                                <h6><a href="index_dcd_XB.html">Di tích vụ
+                                            thảm sát xóm Bàu</a></h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-2" id="dis1"> </div>
-            </div>
-        </div>
-        <!-- ----end--------mapred----------- -->
 
-        <!-- ---------footer-------- -->
-        <div class="container-fluid bg-light " id="ft_bg">
-            <div class="row">
-                <div class="col-xs-6 ">
-                    <p id="ft_h">
-                        THÔNG TIN LIÊN HỆ
-                    </p>
-                    <ul id="ul_ft">
-                        <li><img src="img/icon/home.png" id="ic_ft1">
-                            Đoàn TNCH Hồ Chí Minh Thôn Vân Quật
-                        </li>
-                        <li> <img src="img/icon/map.png" id="ic_ft1">
-                            Thôn Vân Quật, Xã Duy Thành, Huyện Duy Xuyên, Tỉnh
-                            Quảng Nam
-                        </li>
-                        <li> <img src="img/icon/contact.png" id="ic_ft1">
-                            doanthonvanquat@gmail.com
-                        </li>
-                    </ul>
-                    <!-- <a style="color: #0099FF; float: left;">Đoàn TNCH Hồ Chí Minh Thôn Vân Quật</a>
+                <!-- -----end ----car------ -->
+            </div>
+            <div class="col-xs-2" id="dis1"> </div>
+        </div>
+    </div>
+    <!-- ----end--------mapred----------- -->
+
+    <!-- ---------footer-------- -->
+    <div class="container-fluid bg-light " id="ft_bg">
+        <div class="row">
+            <div class="col-xs-6 ">
+                <p id="ft_h">
+                    THÔNG TIN LIÊN HỆ
+                </p>
+                <ul id="ul_ft">
+                    <li><img src="img/icon/home.png" id="ic_ft1"> Đoàn TNCS Hồ Chí Minh Thôn Vân Quật
+                    </li>
+                    <li> <img src="img/icon/map.png" id="ic_ft1"> Thôn Vân Quật, Xã Duy Thành, Huyện Duy Xuyên, Tỉnh Quảng Nam
+                    </li>
+                    <li> <img src="img/icon/contact.png" id="ic_ft1"> doanthonvanquat@gmail.com
+                    </li>
+                </ul>
+                <!-- <a style="color: #0099FF; float: left;">Đoàn TNCH Hồ Chí Minh Thôn Vân Quật</a>
             <a style="color: #0099FF; float: left;">Thôn Vân Quật, Xã Duy Thành, Huyện Duy Xuyên, Tỉnh QUảng Nam</a><br>
             <a style="color: #0099FF; float: left;">doanthonvanquat@gmail.com</a> -->
 
-                </div>
-                <div class="col-xs-6 ">
-                    <p id="ft_h">
-                        THEO DÕI CHÚNG TÔI
-                    </p>
-                    <ul id="ul_ft">
-                        <li><img src="img/icon/fb.jpg" id="ic_ft">
-                            <a
-                                href="https://www.facebook.com/profile.php?id=100082551411057"
-                                style="color: #810505;">Tuổi Trẻ Vân Quật Duy
+            </div>
+            <div class="col-xs-6 ">
+                <p id="ft_h">
+                    THEO DÕI CHÚNG TÔI
+                </p>
+                <ul id="ul_ft">
+                    <li><img src="img/icon/fb.jpg" id="ic_ft">
+                        <a href="https://www.facebook.com/profile.php?id=100082551411057" style="color: #810505;">Tuổi Trẻ Vân Quật Duy
                                 Thành</a> </li>
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
-        <footer id="ft" class="bg-light mt-2">
-            <h6>
-                Trang web được phát triển bởi
-                <a href="https://www.facebook.com/VietAn.Tran.1606.CE001"
-                    style="color: #810505;">Trần Viết An</a>
-            </h6>
-            <h6>Trang web đang được triển khai trên nên tảng Github cá nhân</h6>
-        </footer>
-        <audio id="audio_p">
+    </div>
+    <footer id="ft" class="bg-light mt-2">
+        <h6>
+            Trang web được phát triển bởi
+            <a href="https://www.facebook.com/VietAn.Tran.1606.CE001" style="color: #810505;">Trần Viết An</a>
+        </h6>
+        <h6>Trang web đang được triển khai trên nên tảng Github cá nhân</h6>
+    </footer>
+    <audio id="audio_p">
             <source src="./audio/GiaiDieuTuHao.mp3">
         </audio>
-        <!-- ---------end footer-------- -->
-    </body>
-    <script>
-        var audio = document.getElementById("audio_p");
-        function funcplay() {
-          audio.play();
+    <!-- ---------end footer-------- -->
+</body>
+<script>
+    var audio = document.getElementById("audio_p");
+
+    function funcplay() {
+        audio.play();
+    }
+
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
         }
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    
-      </script>
+    }
+</script>
+
 </html>

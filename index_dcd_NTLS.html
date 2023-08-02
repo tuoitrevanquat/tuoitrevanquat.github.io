@@ -1,241 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Vân Quật - Địa chỉ đỏ - Nghĩa trang liệt sĩ xã Duy Thành</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/css.css">
-        <link rel="stylesheet" href="css/css_dcd.css">
 
-        <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css"
-            href="bootstraps/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="bootstraps/js/bootstrap.js">
-        <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-            crossorigin="anonymous" />
-        <script src="js/js.js"></script>
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-    </head>
-    <body>
+<head>
+    <title>Vân Quật - Địa chỉ đỏ - Nghĩa trang liệt sĩ xã Duy Thành</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css_dcd.css">
 
-        <div class="container-fluid" style="display: flex; width: 100%;">
-            <img id="logoD" src="img/banner.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstraps/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstraps/js/bootstrap.js">
+    <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="js/js.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid" style="display: flex; width: 100%;">
+        <img id="logoD" src="img/banner.png">
+    </div>
+    <div class="container-fluid">
+        <div style="color: black; text-align: center; height : auto; font-weight: 500; float: center;font-size: 10px;" id="time">
+            <span id="ngay"></span><span>/</span>
+            <span id="thang"></span><span>/</span>
+            <span id="nam"></span><span>,</span>
+            <span id="gio">00</span><span> :</span>
+            <span id="phut">00</span><span> :</span>
+            <span id="giay">00</span><span> </span>
         </div>
-        <div class="container-fluid">
-            <div
-                style="color: black; text-align: center; height : auto; font-weight: 500; float: center;font-size: 10px;"
-                id="time">
-                <span id="ngay"></span><span>/</span>
-                <span id="thang"></span><span>/</span>
-                <span id="nam"></span><span>,</span>
-                <span id="gio">00</span><span> :</span>
-                <span id="phut">00</span><span> :</span>
-                <span id="giay">00</span><span> </span>
+    </div>
+    <!-- //-------------menu------------------- -->
+    <div class="container-fluid mt-2 bg-light">
+        <div id="menu_center">
+            <div class="topnav" id="myTopnav">
+
+                <a href="index.html" id="mn" onclick="funcplay()">
+                    <img id="icon_mn" src="img/icon/home.png"> Trang Chủ
+                </a>
+                <a href="index_GT.html" id="mn">
+                    <img id="icon_mn" src="img/icon/info.png"> Giới Thiệu
+                </a>
+                <a href="index_HD.html" id="mn">
+                    <img id="icon_mn" src="img/icon/news.png"> Hoạt Động
+                </a>
+                <a href="index_DCD1.html" id="mn">
+                    <img id="icon_mn" src="img/icon/map.png"> Địa Chỉ Đỏ
+                </a>
+                <a href="index_lh.html" id="mn">
+                    <img id="icon_mn" src="img/icon/contact.png"> Liên hệ
+                </a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </div>
-        <!-- //-------------menu------------------- -->
-        <div class="container-fluid mt-2 bg-light">
-            <div id="menu_center">
-                <div class="topnav" id="myTopnav">
+    </div>
 
-                    <a href="index.html" id="mn" onclick="funcplay()">
-                        <img id="icon_mn" src="img/icon/home.png">
-                        Trang Chủ
-                    </a>
-                    <a href="index_GT.html" id="mn">
-                        <img id="icon_mn" src="img/icon/info.png">
-                        Giới Thiệu
-                    </a>
-                    <a href="index_HD.html" id="mn">
-                        <img id="icon_mn" src="img/icon/news.png">
-                        Hoạt Động
-                    </a>
-                    <a href="index_DCD1.html" id="mn">
-                        <img id="icon_mn" src="img/icon/map.png">
-                        Địa Chỉ Đỏ
-                    </a>
-                    <a href="index_lh.html" id="mn">
-                        <img id="icon_mn" src="img/icon/contact.png">
-                        Liên hệ
-                    </a>
-
-                    <a href="javascript:void(0);" class="icon"
-                        onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
+    <!-- //--------end-menu------------------- -->
+    <!-- ---------------carousel---------------- -->
+    <!-- ----------------------end carousel-------- -->
+    <!-- ---------------conten info------------- -->
+    <div class="container-fluid mt-2" id="tab1">
+        <div id="fr_map">
+            <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                <p style="text-align: center; color: white; font-weight: 600; margin-bottom: 5px; margin-top: 3px;">Bảng đồ đi đến địa điểm: Nghĩa trang liệt sĩ Xã Duy Thành</p>
             </div>
-        </div>
-
-        <!-- //--------end-menu------------------- -->
-        <!-- ---------------carousel---------------- -->
-        <!-- ----------------------end carousel-------- -->
-        <!-- ---------------conten info------------- -->
-        <div class="container-fluid mt-2" id="tab1">
-            <div id="fr_map">
-                <div
-                    style="display: flex; justify-content: center; align-items: center; width: 100%;">
-                    <p
-                        style="text-align: center; color: white; font-weight: 600; margin-bottom: 5px; margin-top: 3px;">Bảng
-                        đồ đi đến địa điểm: Nghĩa trang liệt sĩ Xã Duy Thành</p>
-                </div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d959.6277633541264!2d108.3113616!3d15.8297151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420925e0bdcc27%3A0x5a2d42f044dc303!2zTmdoxKlhIFRyYW5nIExp4buHdCBTxKkgRHV5IFRow6BuaA!5e0!3m2!1sen!2s!4v1690877549797!5m2!1sen!2s"
-                    width="100%" style="border:0;" allowfullscreen
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d959.6277633541264!2d108.3113616!3d15.8297151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420925e0bdcc27%3A0x5a2d42f044dc303!2zTmdoxKlhIFRyYW5nIExp4buHdCBTxKkgRHV5IFRow6BuaA!5e0!3m2!1sen!2s!4v1690877549797!5m2!1sen!2s"
+                width="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-            </div>
-
         </div>
-        <div class="container-fluid mt-2 bg-light">
-            <div class="row">
-                <div class="col-xs-3" id="tab2">
-                    <div id="fr_map">
-                        <div
-                            style="display: flex; justify-content: center; align-items: center; width: 100%;">
-                            <p
-                                style="text-align: justify; color: white; font-weight: 600; margin: 5px;">Bảng
-                                đồ đi đến địa điểm: Nghĩa trang liệt sĩ xã Duy
-                                Thành</p>
-                        </div>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d959.6277633541264!2d108.3113616!3d15.8297151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420925e0bdcc27%3A0x5a2d42f044dc303!2zTmdoxKlhIFRyYW5nIExp4buHdCBTxKkgRHV5IFRow6BuaA!5e0!3m2!1sen!2s!4v1690877549797!5m2!1sen!2s"
-                            width="100%" style="border:0;" allowfullscreen
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
+
+    </div>
+    <div class="container-fluid mt-2 bg-light">
+        <div class="row">
+            <div class="col-xs-3" id="tab2">
+                <div id="fr_map">
+                    <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                        <p style="text-align: justify; color: white; font-weight: 600; margin: 5px;">Bảng đồ đi đến địa điểm: Nghĩa trang liệt sĩ xã Duy Thành
+                        </p>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d959.6277633541264!2d108.3113616!3d15.8297151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420925e0bdcc27%3A0x5a2d42f044dc303!2zTmdoxKlhIFRyYW5nIExp4buHdCBTxKkgRHV5IFRow6BuaA!5e0!3m2!1sen!2s!4v1690877549797!5m2!1sen!2s"
+                        width="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-                    </div>
-                    <p style="margin: 5px;">Vị trí: Thôn Vân Quật, Xã Duy
-                        Thành,Duy Xuyên, Quảng Nam, Việt Nam</p>
                 </div>
-                <div class="col-xs-9" id="tab3">
-                    <h3 style="text-align: center;">Địa chỉ đỏ: Nghĩa trang liệt
-                        sĩ xã Duy Thành</h3>
-                    <p id="p_intro">Nghĩa trang Liệt sĩ quốc gia Vị Xuyên là nơi
-                        an nghỉ của hơn 450 Liệt sĩ và các mẹ Việt Nam anh hùng.
-                        Nơi đây là địa chỉ đỏ, là sự tri ân, ghi nhớ công ơn đối
-                        với những người con yêu quý của xã nhà đã
-                        anh dũng hi sinh cho sự nghiệp đấu tranh giải phóng dân
-                        tộc, bảo vệ tổ quốc. Cũng là nơi hành hương của các gia
-                        đình, của các người con của thế hệ đi sau theo truyền
-                        thống đạo lý cao đẹp của dân tộc “Uống nước nhớ nguồn".
-                    </p>
-                    <p id="p_intro" style="font-style: italic;">Toàn cảnh tại
-                        khu Nghĩa trang liệt sĩ xã Duy Thành</p>
-                    <div
-                        style="width: 100%; display:flex; justify-content:center;">
-                        <div id="panorama1"></div>
-                    </div>
-                    <div
-                        style="width: 100%; display:flex; justify-content:center; padding-top: 20px;">
-                        <div id="panorama2"></div>
-                    </div>
+                <p style="margin: 5px;">Vị trí: Thôn Vân Quật, Xã Duy Thành,Duy Xuyên, Quảng Nam, Việt Nam</p>
+            </div>
+            <div class="col-xs-9" id="tab3">
+                <h3 style="text-align: center;">Địa chỉ đỏ: Nghĩa trang liệt sĩ xã Duy Thành</h3>
+                <p id="p_intro">Nghĩa trang Liệt sĩ quốc gia Vị Xuyên là nơi an nghỉ của hơn 450 Liệt sĩ và các mẹ Việt Nam anh hùng. Nơi đây là địa chỉ đỏ, là sự tri ân, ghi nhớ công ơn đối với những người con yêu quý của xã nhà đã anh dũng hi sinh cho sự nghiệp đấu
+                    tranh giải phóng dân tộc, bảo vệ tổ quốc. Cũng là nơi hành hương của các gia đình, của các người con của thế hệ đi sau theo truyền thống đạo lý cao đẹp của dân tộc “Uống nước nhớ nguồn".
+                </p>
+                <p id="p_intro" style="font-style: italic;">Toàn cảnh tại khu Nghĩa trang liệt sĩ xã Duy Thành</p>
+                <div style="width: 100%; display:flex; justify-content:center;">
+                    <div id="panorama1"></div>
+                </div>
+                <div style="width: 100%; display:flex; justify-content:center; padding-top: 20px;">
+                    <div id="panorama2"></div>
+                </div>
 
-                    <p id="p_intro">Cuộc chiến đấu bảo vệ biên 
-                        Tổ quốc đã qua đi nhưng những chiến công oanh liệt,
-                        những hi sinh mất mát của các anh hùng liệt sĩ, những
-                        người có công với đất nước sẽ mãi khắc ghi. Nghĩa trang
-                        Liệt sĩ xã Duy Thành không chỉ là công trình tâm linh nghĩa
-                        tình mà còn là địa chỉ đỏ mang ý nghĩa giá trị giáo dục
-                        truyền thống sinh động nhất, ý nghĩa nhất cho các thế hệ
-                        hôm nay và mai sau.</p>
-                    <div
-                        style="width: 100%; display:flex; justify-content:center;">
-                        <img
-                            src="img/dcd_nt0.jpg" id="sty_i">
-                    </div>
+                <p id="p_intro">Cuộc chiến đấu bảo vệ biên Tổ quốc đã qua đi nhưng những chiến công oanh liệt, những hi sinh mất mát của các anh hùng liệt sĩ, những người có công với đất nước sẽ mãi khắc ghi. Nghĩa trang Liệt sĩ xã Duy Thành không chỉ là công trình tâm
+                    linh nghĩa tình mà còn là địa chỉ đỏ mang ý nghĩa giá trị giáo dục truyền thống sinh động nhất, ý nghĩa nhất cho các thế hệ hôm nay và mai sau.</p>
+                <div style="width: 100%; display:flex; justify-content:center;">
+                    <img src="img/dcd_nt0.jpg" id="sty_i">
                 </div>
             </div>
         </div>
-        <!-- -------------end conten info--------------- -->
-        <!-- ---------footer-------- -->
-        <div class="container-fluid bg-light " id="ft_bg">
-            <div class="row">
-                <div class="col-xs-6 ">
-                    <p id="ft_h">
-                        THÔNG TIN LIÊN HỆ
-                    </p>
-                    <ul id="ul_ft">
-                        <li><img src="img/icon/home.png" id="ic_ft1">
-                            Đoàn TNCH Hồ Chí Minh Thôn Vân Quật
-                        </li>
-                        <li> <img src="img/icon/map.png" id="ic_ft1">
-                            Thôn Vân Quật, Xã Duy Thành, Huyện Duy Xuyên, Tỉnh
-                            Quảng Nam
-                        </li>
-                        <li> <img src="img/icon/contact.png" id="ic_ft1">
-                            doanthonvanquat@gmail.com
-                        </li>
-                    </ul>
+    </div>
+    <!-- -------------end conten info--------------- -->
+    <!-- ---------footer-------- -->
+    <div class="container-fluid bg-light " id="ft_bg">
+        <div class="row">
+            <div class="col-xs-6 ">
+                <p id="ft_h">
+                    THÔNG TIN LIÊN HỆ
+                </p>
+                <ul id="ul_ft">
+                    <li><img src="img/icon/home.png" id="ic_ft1"> Đoàn TNCS Hồ Chí Minh Thôn Vân Quật
+                    </li>
+                    <li> <img src="img/icon/map.png" id="ic_ft1"> Thôn Vân Quật, Xã Duy Thành, Huyện Duy Xuyên, Tỉnh Quảng Nam
+                    </li>
+                    <li> <img src="img/icon/contact.png" id="ic_ft1"> doanthonvanquat@gmail.com
+                    </li>
+                </ul>
 
-                </div>
-                <div class="col-xs-6 ">
-                    <p id="ft_h">
-                        THEO DÕI CHÚNG TÔI
-                    </p>
-                    <ul id="ul_ft">
-                        <li><img src="img/icon/fb.jpg" id="ic_ft">
-                            <a
-                                href="https://www.facebook.com/profile.php?id=100082551411057"
-                                style="color: #810505;">Tuổi Trẻ Vân Quật Duy
+            </div>
+            <div class="col-xs-6 ">
+                <p id="ft_h">
+                    THEO DÕI CHÚNG TÔI
+                </p>
+                <ul id="ul_ft">
+                    <li><img src="img/icon/fb.jpg" id="ic_ft">
+                        <a href="https://www.facebook.com/profile.php?id=100082551411057" style="color: #810505;">Tuổi Trẻ Vân Quật Duy
                                 Thành</a> </li>
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
-        <footer id="ft" class="bg-light mt-2">
-            <h6>
-                Trang web được phát triển bởi
-                <a href="https://www.facebook.com/VietAn.Tran.1606.CE001"
-                    style="color: #810505;">Trần Viết An</a>
-            </h6>
-            <h6>Trang web đang được triển khai trên nên tảng Github cá nhân</h6>
-        </footer>
-        <audio id="audio_p">
+    </div>
+    <footer id="ft" class="bg-light mt-2">
+        <h6>
+            Trang web được phát triển bởi
+            <a href="https://www.facebook.com/VietAn.Tran.1606.CE001" style="color: #810505;">Trần Viết An</a>
+        </h6>
+        <h6>Trang web đang được triển khai trên nên tảng Github cá nhân</h6>
+    </footer>
+    <audio id="audio_p">
             <source src="./audio/GiaiDieuTuHao.mp3">
         </audio>
-        <!-- ---------end footer-------- -->
-    </body>
-    <script>
-        pannellum.viewer('panorama1', {
-            "type": "equirectangular",
-            "panorama": "img/dcd_nt1.jpg",
-            "autoLoad": true
-        });
-        pannellum.viewer('panorama2', {
-            "type": "equirectangular",
-            // "panorama": "https://scontent.xx.fbcdn.net/v/t1.15752-9/358216011_185621684359638_2911792766507052994_n.jpg?stp=dst-jpg_s417x417&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=YBeXgQC74jMAX_Fkk2Z&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSw7QgaLeJa0M7z0RkiEcKWk-bDgHD2zkpPrQx8um0maw&oe=64ED5D7E",
-            "panorama": "img/dcd_nt2.jpg",
-            "autoLoad": true
-        });
+    <!-- ---------end footer-------- -->
+</body>
+<script>
+    pannellum.viewer('panorama1', {
+        "type": "equirectangular",
+        "panorama": "img/dcd_nt1.jpg",
+        "autoLoad": true
+    });
+    pannellum.viewer('panorama2', {
+        "type": "equirectangular",
+        // "panorama": "https://scontent.xx.fbcdn.net/v/t1.15752-9/358216011_185621684359638_2911792766507052994_n.jpg?stp=dst-jpg_s417x417&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=YBeXgQC74jMAX_Fkk2Z&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSw7QgaLeJa0M7z0RkiEcKWk-bDgHD2zkpPrQx8um0maw&oe=64ED5D7E",
+        "panorama": "img/dcd_nt2.jpg",
+        "autoLoad": true
+    });
+</script>
+<script>
+    var audio = document.getElementById("audio_p");
 
-    </script>
-    <script>
-        var audio = document.getElementById("audio_p");
-        function funcplay() {
-          audio.play();
+    function funcplay() {
+        audio.play();
+    }
+
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
         }
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    
-      </script>
+    }
+</script>
+
 </html>

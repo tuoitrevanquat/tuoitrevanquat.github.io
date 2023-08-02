@@ -1,335 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Vân Quật - Địa chỉ đỏ - Chiến thắng Vân Quật</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/css.css">
-        <link rel="stylesheet" href="css/css_dcd.css">
 
-        <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css"
-            href="bootstraps/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="bootstraps/js/bootstrap.js">
-        <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-            crossorigin="anonymous" />
-        <script src="js/js.js"></script>
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-    </head>
-    <body>
+<head>
+    <title>Vân Quật - Địa chỉ đỏ - Chiến thắng Vân Quật</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css_dcd.css">
 
-        <div class="container-fluid" style="display: flex; width: 100%;">
-            <img id="logoD" src="img/banner.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstraps/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstraps/js/bootstrap.js">
+    <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="js/js.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid" style="display: flex; width: 100%;">
+        <img id="logoD" src="img/banner.png">
+    </div>
+    <div class="container-fluid">
+        <div style="color: black; text-align: center; height : auto; font-weight: 500; float: center;font-size: 10px;" id="time">
+            <span id="ngay"></span><span>/</span>
+            <span id="thang"></span><span>/</span>
+            <span id="nam"></span><span>,</span>
+            <span id="gio">00</span><span> :</span>
+            <span id="phut">00</span><span> :</span>
+            <span id="giay">00</span><span> </span>
         </div>
-        <div class="container-fluid">
-            <div
-                style="color: black; text-align: center; height : auto; font-weight: 500; float: center;font-size: 10px;"
-                id="time">
-                <span id="ngay"></span><span>/</span>
-                <span id="thang"></span><span>/</span>
-                <span id="nam"></span><span>,</span>
-                <span id="gio">00</span><span> :</span>
-                <span id="phut">00</span><span> :</span>
-                <span id="giay">00</span><span> </span>
+    </div>
+    <!-- //-------------menu------------------- -->
+    <div class="container-fluid mt-2 bg-light">
+        <div id="menu_center">
+            <div class="topnav" id="myTopnav">
+
+                <a href="index.html" id="mn" onclick="funcplay()">
+                    <img id="icon_mn" src="img/icon/home.png"> Trang Chủ
+                </a>
+                <a href="index_GT.html" id="mn">
+                    <img id="icon_mn" src="img/icon/info.png"> Giới Thiệu
+                </a>
+                <a href="index_HD.html" id="mn">
+                    <img id="icon_mn" src="img/icon/news.png"> Hoạt Động
+                </a>
+                <a href="index_DCD1.html" id="mn">
+                    <img id="icon_mn" src="img/icon/map.png"> Địa Chỉ Đỏ
+                </a>
+                <a href="index_lh.html" id="mn">
+                    <img id="icon_mn" src="img/icon/contact.png"> Liên hệ
+                </a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </div>
-        <!-- //-------------menu------------------- -->
-        <div class="container-fluid mt-2 bg-light">
-            <div id="menu_center">
-                <div class="topnav" id="myTopnav">
+    </div>
 
-                    <a href="index.html" id="mn" onclick="funcplay()">
-                        <img id="icon_mn" src="img/icon/home.png">
-                        Trang Chủ
-                    </a>
-                    <a href="index_GT.html" id="mn">
-                        <img id="icon_mn" src="img/icon/info.png">
-                        Giới Thiệu
-                    </a>
-                    <a href="index_HD.html" id="mn">
-                        <img id="icon_mn" src="img/icon/news.png">
-                        Hoạt Động
-                    </a>
-                    <a href="index_DCD1.html" id="mn">
-                        <img id="icon_mn" src="img/icon/map.png">
-                        Địa Chỉ Đỏ
-                    </a>
-                    <a href="index_lh.html" id="mn">
-                        <img id="icon_mn" src="img/icon/contact.png">
-                        Liên hệ
-                    </a>
-
-                    <a href="javascript:void(0);" class="icon"
-                        onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
+    <!-- //--------end-menu------------------- -->
+    <!-- ---------------carousel---------------- -->
+    <!-- ----------------------end carousel-------- -->
+    <!-- ---------------conten info------------- -->
+    <div class="container-fluid mt-2" id="tab1">
+        <div id="fr_map">
+            <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                <p style="text-align: center; color: white; font-weight: 600; margin-bottom: 5px; margin-top: 3px;">Bảng đồ đi đến địa điểm: Tượng đài Chiến thắng Vân Quật</p>
             </div>
-        </div>
-
-        <!-- //--------end-menu------------------- -->
-        <!-- ---------------carousel---------------- -->
-        <!-- ----------------------end carousel-------- -->
-        <!-- ---------------conten info------------- -->
-        <div class="container-fluid mt-2" id="tab1">
-            <div id="fr_map">
-                <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
-                <p
-                    style="text-align: center; color: white; font-weight: 600; margin-bottom: 5px; margin-top: 3px;">Bảng
-                    đồ đi đến địa điểm: Tượng đài Chiến thắng Vân Quật</p>
-                </div>
-                    <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d479.81447764402594!2d108.3009815!3d15.8294641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314209339721c46b%3A0x1ec28028659ce469!2zVMaw4bujbmcgxJHDoGkgQ2hp4bq_biB0aOG6r25nIFbEg24gUXXhuq10!5e0!3m2!1sen!2s!4v1690877952816!5m2!1sen!2s"
-                    width="100%" style="border:0;" allowfullscreen
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d479.81447764402594!2d108.3009815!3d15.8294641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314209339721c46b%3A0x1ec28028659ce469!2zVMaw4bujbmcgxJHDoGkgQ2hp4bq_biB0aOG6r25nIFbEg24gUXXhuq10!5e0!3m2!1sen!2s!4v1690877952816!5m2!1sen!2s"
+                width="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-            </div>
-
         </div>
-        <div class="container-fluid mt-2 bg-light">
-            <div class="row">
-                <div class="col-xs-3" id="tab2">
-                    <div id="fr_map">
-                        <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
-                        <p
-                            style="text-align: justify; color: white; font-weight: 600; margin: 5px;">Bảng
-                            đồ đi đến địa điểm: Tượng đài Chiến thắng Vân Quật</p>
-                        </div>
-                            <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d479.81447764402594!2d108.3009815!3d15.8294641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314209339721c46b%3A0x1ec28028659ce469!2zVMaw4bujbmcgxJHDoGkgQ2hp4bq_biB0aOG6r25nIFbEg24gUXXhuq10!5e0!3m2!1sen!2s!4v1690877952816!5m2!1sen!2s"
-                            width="100%" style="border:0;" allowfullscreen
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
+
+    </div>
+    <div class="container-fluid mt-2 bg-light">
+        <div class="row">
+            <div class="col-xs-3" id="tab2">
+                <div id="fr_map">
+                    <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                        <p style="text-align: justify; color: white; font-weight: 600; margin: 5px;">Bảng đồ đi đến địa điểm: Tượng đài Chiến thắng Vân Quật</p>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d479.81447764402594!2d108.3009815!3d15.8294641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314209339721c46b%3A0x1ec28028659ce469!2zVMaw4bujbmcgxJHDoGkgQ2hp4bq_biB0aOG6r25nIFbEg24gUXXhuq10!5e0!3m2!1sen!2s!4v1690877952816!5m2!1sen!2s"
+                        width="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-                    </div>
-                    <p style="margin: 5px;">Vị trí: Thôn Vân Quật, Xã Duy Thành,Duy Xuyên, Quảng Nam, Việt Nam</p>
                 </div>
-                <div class="col-xs-9" id="tab3">
-                    <h3 style="text-align: center;">Di tích: Chiến thắng Vân
-                        Quật</h3>
-                    <p id="p_intro">Ai đi qua tuyến đường từ quốc lộ 1 xuống
-                        vùng Đông Duy Xuyên hôm nay, ngang thôn Vân Quật, xã Duy
-                        Thành đều nhìn thấy sừng sững một tượng đài. Đó là tượng
-                        đài chiến thắng Vân Quật ghi dấu một chiến công vang dội
-                        của quân và dân ta trong công cuộc kháng chiến chống Mỹ
-                        cứu nước ở huyện Duy Xuyên.
-                    </p>
-                    <p id="p_intro" style="font-style: italic;">Toàn cảnh tại
-                        khu Tượng đài Chiến thắng Vân Quật</p>
-                    <div
-                        style="width: 100%; display:flex; justify-content:center;">
-                        <div id="panorama1"></div>
-                    </div>
-                    <div
-                        style="width: 100%; display:flex; justify-content:center; padding-top: 20px;">
-                        <div id="panorama2"></div>
-                    </div>
-                    
-                    <p id="p_intro">Tháng 9/1964, xã Duy Thành (Xuyên Tân cũ)
-                        được giải phóng. Nhân dân toàn xã nô nức xây dựng chính
-                        quyền cách mạng, xây dựng lực lượng vũ trang, củng cố
-                        Duy Thành trở thành căn cứ cách mạng, chuẩn bị đánh giặc
-                        lâu dài. Việc giải phóng Duy Thành đã kết nối đường dây
-                        liên lạc của Huyện ủy Duy Xuyên từ căn cứ trên vùng núi
-                        Hòn Tàu về đến vùng Đông Duy Xuyên, ngang qua xã Duy
-                        Thành. Lực lượng cách mạng ở Duy Thành thường xuyên uy
-                        hiếp địch ở quốc lộ 1 đoạn từ Nam Phước đến Bà Rén, gây
-                        cho chúng nhiều thiệt hại, hoang mang, trở ngại. </p>
-                    <p id="p_intro">Biết được vị trí xung yếu đó, địch tìm mọi
-                        cách đánh chiếm xã Duy Thành. Để thực hiện kế hoạch,
-                        nhiều cuộc hành quân càn quét đã diễn ra, mà đỉnh cao là
-                        trận càn vào sáng ngày 28/5/1965. Địch huy động một đại
-                        đội lính bảo an, một đại đội lính biệt kích Tây Hồ, chín
-                        trung đội dân vệ. Tổng quân số địch lên khoảng khoảng
-                        500 tên, do tên Bường - đại đội trưởng lính Bảo an và
-                        tên Được - đại đội trưởng lính biệt kích chỉ huy. Địch
-                        theo đường 104 (nay là đường Hùng Vương) tiến xuống Duy
-                        Phước. Tại Duy Phước, địch chia hai cánh quân: cánh thứ
-                        nhất tiến từ Lang Châu vào, cánh thứ hai tiến xuống Duy
-                        Vinh đánh lên. Ý đồ của địch là tạo thế gọng kìm, đẩy
-                        lực lượng cách mạng của Duy Thành lên Vân Quật và tiêu
-                        diệt.</p>
-                    <p id="p_intro">Về phía ta, tiểu đoàn 1 (R20) vừa mới
-                        thành lập đã được giao trọng trách chặn đánh
-                        đoàn xe vận tải của địch trên tuyến quốc lộ 1,
-                        đoạn từ Câu Lâu đến Bà Rén với phương châm chiến
-                        thắng ngay từ trận đầu ra quân. Đây là thử thách
-                        lớn nhất nhưng rất vinh dự cho đơn vị này.</p>
-                    <p id="p_intro">Nhận được tin địch đánh vào Duy Thành, lực
-                        lượng vũ trang của ta nhanh chóng thay đổi phương án tác
-                        chiến; từ phục kích đoàn xe vận tải chuyển sang tấn công
-                        chống càn, quyết tâm tiêu diệt địch giữ vững địa bàn</p>
-                    <div
-                        style="width: 100%; display:flex; justify-content:center;">
-                        <img
-                            src="img/dcd_vq1.jpg" id="sty_i">
-                    </div>
-
-                    <p id="p_intro">Mới 5 giờ sáng, khi sương mù còn giăng trên
-                        khắp các nẻo đường làng, địch đã ào ạt tiến vào. Ông Lê
-                        Trung Lịch - du kích xã phát hiện địch, đã nổ súng báo
-                        hiệu. Do công tác chuẩn bị lúc đầu còn bị động, việc di
-                        chuyển các bộ phận hậu cần, trạm phẫu thuật còn chậm
-                        chạp nên có một số thương vong. Địch từ cánh Duy Vinh
-                        tiến lên đã bắt dân làng đi trước làm bình phong mở
-                        đường, bọn chúng tiến theo sau.</p>
-                    <p id="p_intro">Trước tình huống đó, ông Võ Xuân Lâm - tiểu
-                        đoàn phó, bố trí lại đội hình chiến đấu. Ông ra lệnh cho
-                        đại đội 1 men theo quốc lộ 1 tiến ra Nam Phước vòng
-                        xuống Lang Châu đánh vào phía sau lưng cánh quân thứ
-                        nhất của địch; đại đội 2 tiến xuống thôn Thi Thại đánh
-                        cánh quân đang từ Duy Vinh tiến lên, có du kích xã phối
-                        hợp; đại đội 3 bố trí tại Vân Quật. </p>
-                    <p id="p_intro">Tại hướng Đông, du kích và trinh sát tiểu
-                        đoàn vừa bắn chỉ thiên vừa lui dần lên hướng quốc lộ 1,
-                        nhằm tách dân ra khỏi đội hình địch và dụ quân địch vào
-                        trận địa phục kích. Nghe tiếng súng bắn lẻ tẻ của du
-                        kích, địch nhanh chóng vượt lên, bỏ dân lại phía sau để
-                        đuổi theo quân ta. Nhờ vậy, số dân bị chúng bắt đã lùi
-                        về phía sau ẩn núp an toàn.</p>
-                    <div
-                        style="width: 100%; display:flex; justify-content:center;"><img
-                            src="img/dcd_vq2.jpg" id="sty_i">
-                    </div>
-                    <p id="p_intro">Đó cũng là lúc cả hai cánh quân của địch lọt
-                        vào trận mai phục trên một khu chiến rộng khoảng một cây
-                        số vuông. Lệnh tấn công ban ra, hỏa lực của ta đồng loạt
-                        tấn công. Ta đánh chính diện, kết hợp với sức tiến công
-                        của đại đội 1 bọc phía sau lưng địch. Mặc dầu rơi vào
-                        thế bị động, bọn địch vẫn dựa vào các mô đất ở gò mả và
-                        trên cánh đồng chống trả quyết liệt. Trước sức tiến công
-                        như vũ bão của ta khiến địch thương vong lớn. Địch bị
-                        chia cắt đội hình, nhưng vẫn cố đánh để chạy lên quốc lộ
-                        1. Ta quyết tâm kìm chân địch tiêu diệt, không cho chúng
-                        chạy ra được quốc lộ. Trận chiến diễn ra ác liệt, gay
-                        cấn. Bọn địch lớp chết, lớp bị thương, sức chiến đấu yếu
-                        dần, đội hình tan rã.</p>
-                    <p id="p_intro">Trước nguy cơ bị tiêu diệt hoàn toàn, nhiều
-                        tốp địch bỏ chạy ra hướng sông Bà Rén cướp thuyền vượt
-                        sông, nhưng bị du kích ta chặn đánh. Bộ đội và du kích
-                        cùng nhân dân bắt tù binh, thu vũ khí. Nhiều tên địch
-                        chạy vào nhà dân cũng bị dân dùng rựa mác, dây dừa bắt
-                        sống. Đến trưa khi trận đánh kết thúc, du kích và nhân
-                        dân ra trận địa thu vũ khí, khí tài, tiếp tục truy lùng
-                        bọn địch còn ẩn nấp ở các bụi bờ. Tên Được, tên Bường và
-                        Ban chỉ huy địch bị bắt sống toàn bộ. Ta tiêu diệt hơn
-                        200 tên địch, bắt sống 180 tên, xóa sổ ba đơn vị địch.
-                        Chiều hôm đó, địch cho hai máy bay vào ném bom, làm một
-                        số đồng bào ta thương vong, nhà cửa cháy rụi. Qua ngày
-                        hôm sau, bọn địch ở quận lỵ Duy Xuyên kéo cờ trắng xuống
-                        thu gom xác địch.</p>
-                    <p id="p_intro">Chiến thắng Vân Quật là chiến thắng vang dội
-                        của lực lượng vũ trang tỉnh Quảng Nam vào năm 1965. Đây
-                        là trận đầu tiên mà quân và dân huyện Duy Xuyên diệt
-                        được một tiểu đoàn địch. Chiến thắng này minh chứng cho
-                        sự lớn mạnh của lực lượng cách mạng vùng Đông Duy Xuyên;
-                        có sức động viên cổ vũ phong trào cách mạng Duy Xuyên
-                        ngày càng phát triển mạnh mẽ, còn địch thì ngày càng
-                        hoang mang lo sợ. </p>
-                    <p id="p_intro">Tượng đài chiến thắng Vân Quật là biểu tượng
-                        sáng ngời về lòng tự hào, yêu nước Tượng đài mãi còn lưu
-                        truyền thông điệp về lòng yêu nước, ý chí quật cường,
-                        dũng cảm của quân và dân ta trong những năm tháng hào
-                        hùng của sự nghiệp chống Mỹ, cứu nước cho đời sau, nhằm
-                        giáo dục các thế hệ tiếp bước cha ông trong sự nghiệp
-                        xây dựng và bảo vệ Tổ quốc.</p>
-                    <p id="p_intro">Chiến thắng Vân Quật được Ủy ban nhân dân
-                        tỉnh Quảng Nam ban hành Quyết định số 436/QĐ/UBND/2005,
-                        ngày 15/2/2005, xếp hạng di tích cấp tỉnh.</p>
-                    <p id="p_td">Trích dẫn từ nguồn: <a
-                            href="https://duyxuyen.quangnam.gov.vn/webcenter/portal/duyxuyen/pages_tin-tuc/chi-tiet-tin?dDocName=PORTAL338133">duyxuyen.quangnam.gov.vn</a></p>
-
+                <p style="margin: 5px;">Vị trí: Thôn Vân Quật, Xã Duy Thành,Duy Xuyên, Quảng Nam, Việt Nam</p>
+            </div>
+            <div class="col-xs-9" id="tab3">
+                <h3 style="text-align: center;">Di tích: Chiến thắng Vân Quật
+                </h3>
+                <p id="p_intro">Ai đi qua tuyến đường từ quốc lộ 1 xuống vùng Đông Duy Xuyên hôm nay, ngang thôn Vân Quật, xã Duy Thành đều nhìn thấy sừng sững một tượng đài. Đó là tượng đài chiến thắng Vân Quật ghi dấu một chiến công vang dội của quân và dân ta trong
+                    công cuộc kháng chiến chống Mỹ cứu nước ở huyện Duy Xuyên.
+                </p>
+                <p id="p_intro" style="font-style: italic;">Toàn cảnh tại khu Tượng đài Chiến thắng Vân Quật</p>
+                <div style="width: 100%; display:flex; justify-content:center;">
+                    <div id="panorama1"></div>
                 </div>
+                <div style="width: 100%; display:flex; justify-content:center; padding-top: 20px;">
+                    <div id="panorama2"></div>
+                </div>
+
+                <p id="p_intro">Tháng 9/1964, xã Duy Thành (Xuyên Tân cũ) được giải phóng. Nhân dân toàn xã nô nức xây dựng chính quyền cách mạng, xây dựng lực lượng vũ trang, củng cố Duy Thành trở thành căn cứ cách mạng, chuẩn bị đánh giặc lâu dài. Việc giải phóng Duy
+                    Thành đã kết nối đường dây liên lạc của Huyện ủy Duy Xuyên từ căn cứ trên vùng núi Hòn Tàu về đến vùng Đông Duy Xuyên, ngang qua xã Duy Thành. Lực lượng cách mạng ở Duy Thành thường xuyên uy hiếp địch ở quốc lộ 1 đoạn từ Nam Phước
+                    đến Bà Rén, gây cho chúng nhiều thiệt hại, hoang mang, trở ngại. </p>
+                <p id="p_intro">Biết được vị trí xung yếu đó, địch tìm mọi cách đánh chiếm xã Duy Thành. Để thực hiện kế hoạch, nhiều cuộc hành quân càn quét đã diễn ra, mà đỉnh cao là trận càn vào sáng ngày 28/5/1965. Địch huy động một đại đội lính bảo an, một đại đội
+                    lính biệt kích Tây Hồ, chín trung đội dân vệ. Tổng quân số địch lên khoảng khoảng 500 tên, do tên Bường - đại đội trưởng lính Bảo an và tên Được - đại đội trưởng lính biệt kích chỉ huy. Địch theo đường 104 (nay là đường Hùng Vương)
+                    tiến xuống Duy Phước. Tại Duy Phước, địch chia hai cánh quân: cánh thứ nhất tiến từ Lang Châu vào, cánh thứ hai tiến xuống Duy Vinh đánh lên. Ý đồ của địch là tạo thế gọng kìm, đẩy lực lượng cách mạng của Duy Thành lên Vân Quật và
+                    tiêu diệt.
+                </p>
+                <p id="p_intro">Về phía ta, tiểu đoàn 1 (R20) vừa mới thành lập đã được giao trọng trách chặn đánh đoàn xe vận tải của địch trên tuyến quốc lộ 1, đoạn từ Câu Lâu đến Bà Rén với phương châm chiến thắng ngay từ trận đầu ra quân.
+                    Đây là thử thách lớn nhất nhưng rất vinh dự cho đơn vị này.</p>
+                <p id="p_intro">Nhận được tin địch đánh vào Duy Thành, lực lượng vũ trang của ta nhanh chóng thay đổi phương án tác chiến; từ phục kích đoàn xe vận tải chuyển sang tấn công chống càn, quyết tâm tiêu diệt địch giữ vững địa bàn</p>
+                <div style="width: 100%; display:flex; justify-content:center;">
+                    <img src="img/dcd_vq1.jpg" id="sty_i">
+                </div>
+
+                <p id="p_intro">Mới 5 giờ sáng, khi sương mù còn giăng trên khắp các nẻo đường làng, địch đã ào ạt tiến vào. Ông Lê Trung Lịch - du kích xã phát hiện địch, đã nổ súng báo hiệu. Do công tác chuẩn bị lúc đầu còn bị động, việc di chuyển các bộ phận hậu cần,
+                    trạm phẫu thuật còn chậm chạp nên có một số thương vong. Địch từ cánh Duy Vinh tiến lên đã bắt dân làng đi trước làm bình phong mở đường, bọn chúng tiến theo sau.</p>
+                <p id="p_intro">Trước tình huống đó, ông Võ Xuân Lâm - tiểu đoàn phó, bố trí lại đội hình chiến đấu. Ông ra lệnh cho đại đội 1 men theo quốc lộ 1 tiến ra Nam Phước vòng xuống Lang Châu đánh vào phía sau lưng cánh quân thứ nhất của địch; đại đội 2 tiến
+                    xuống thôn Thi Thại đánh cánh quân đang từ Duy Vinh tiến lên, có du kích xã phối hợp; đại đội 3 bố trí tại Vân Quật. </p>
+                <p id="p_intro">Tại hướng Đông, du kích và trinh sát tiểu đoàn vừa bắn chỉ thiên vừa lui dần lên hướng quốc lộ 1, nhằm tách dân ra khỏi đội hình địch và dụ quân địch vào trận địa phục kích. Nghe tiếng súng bắn lẻ tẻ của du kích, địch nhanh chóng vượt
+                    lên, bỏ dân lại phía sau để đuổi theo quân ta. Nhờ vậy, số dân bị chúng bắt đã lùi về phía sau ẩn núp an toàn.</p>
+                <div style="width: 100%; display:flex; justify-content:center;"><img src="img/dcd_vq2.jpg" id="sty_i">
+                </div>
+                <p id="p_intro">Đó cũng là lúc cả hai cánh quân của địch lọt vào trận mai phục trên một khu chiến rộng khoảng một cây số vuông. Lệnh tấn công ban ra, hỏa lực của ta đồng loạt tấn công. Ta đánh chính diện, kết hợp với sức tiến công của đại đội 1 bọc phía
+                    sau lưng địch. Mặc dầu rơi vào thế bị động, bọn địch vẫn dựa vào các mô đất ở gò mả và trên cánh đồng chống trả quyết liệt. Trước sức tiến công như vũ bão của ta khiến địch thương vong lớn. Địch bị chia cắt đội hình, nhưng vẫn cố đánh
+                    để chạy lên quốc lộ 1. Ta quyết tâm kìm chân địch tiêu diệt, không cho chúng chạy ra được quốc lộ. Trận chiến diễn ra ác liệt, gay cấn. Bọn địch lớp chết, lớp bị thương, sức chiến đấu yếu dần, đội hình tan rã.</p>
+                <p id="p_intro">Trước nguy cơ bị tiêu diệt hoàn toàn, nhiều tốp địch bỏ chạy ra hướng sông Bà Rén cướp thuyền vượt sông, nhưng bị du kích ta chặn đánh. Bộ đội và du kích cùng nhân dân bắt tù binh, thu vũ khí. Nhiều tên địch chạy vào nhà dân cũng bị dân
+                    dùng rựa mác, dây dừa bắt sống. Đến trưa khi trận đánh kết thúc, du kích và nhân dân ra trận địa thu vũ khí, khí tài, tiếp tục truy lùng bọn địch còn ẩn nấp ở các bụi bờ. Tên Được, tên Bường và Ban chỉ huy địch bị bắt sống toàn bộ.
+                    Ta tiêu diệt hơn 200 tên địch, bắt sống 180 tên, xóa sổ ba đơn vị địch. Chiều hôm đó, địch cho hai máy bay vào ném bom, làm một số đồng bào ta thương vong, nhà cửa cháy rụi. Qua ngày hôm sau, bọn địch ở quận lỵ Duy Xuyên kéo cờ trắng
+                    xuống thu gom xác địch.</p>
+                <p id="p_intro">Chiến thắng Vân Quật là chiến thắng vang dội của lực lượng vũ trang tỉnh Quảng Nam vào năm 1965. Đây là trận đầu tiên mà quân và dân huyện Duy Xuyên diệt được một tiểu đoàn địch. Chiến thắng này minh chứng cho sự lớn mạnh của lực lượng
+                    cách mạng vùng Đông Duy Xuyên; có sức động viên cổ vũ phong trào cách mạng Duy Xuyên ngày càng phát triển mạnh mẽ, còn địch thì ngày càng hoang mang lo sợ. </p>
+                <p id="p_intro">Tượng đài chiến thắng Vân Quật là biểu tượng sáng ngời về lòng tự hào, yêu nước Tượng đài mãi còn lưu truyền thông điệp về lòng yêu nước, ý chí quật cường, dũng cảm của quân và dân ta trong những năm tháng hào hùng của sự nghiệp chống
+                    Mỹ, cứu nước cho đời sau, nhằm giáo dục các thế hệ tiếp bước cha ông trong sự nghiệp xây dựng và bảo vệ Tổ quốc.</p>
+                <p id="p_intro">Chiến thắng Vân Quật được Ủy ban nhân dân tỉnh Quảng Nam ban hành Quyết định số 436/QĐ/UBND/2005, ngày 15/2/2005, xếp hạng di tích cấp tỉnh.</p>
+                <p id="p_td">Trích dẫn từ nguồn: <a href="https://duyxuyen.quangnam.gov.vn/webcenter/portal/duyxuyen/pages_tin-tuc/chi-tiet-tin?dDocName=PORTAL338133">duyxuyen.quangnam.gov.vn</a></p>
+
             </div>
         </div>
-        <!-- -------------end conten info--------------- -->
-        <!-- ---------footer-------- -->
-        <div class="container-fluid bg-light " id="ft_bg">
-            <div class="row">
-                <div class="col-xs-6 ">
-                    <p id="ft_h">
-                        THÔNG TIN LIÊN HỆ
-                    </p>
-                    <ul id="ul_ft">
-                        <li><img src="img/icon/home.png" id="ic_ft1">
-                            Đoàn TNCH Hồ Chí Minh Thôn Vân Quật
-                        </li>
-                        <li> <img src="img/icon/map.png" id="ic_ft1">
-                            Thôn Vân Quật, Xã Duy Thành, Huyện Duy Xuyên, Tỉnh
-                            Quảng Nam
-                        </li>
-                        <li> <img src="img/icon/contact.png" id="ic_ft1">
-                            doanthonvanquat@gmail.com
-                        </li>
-                    </ul>
+    </div>
+    <!-- -------------end conten info--------------- -->
+    <!-- ---------footer-------- -->
+    <div class="container-fluid bg-light " id="ft_bg">
+        <div class="row">
+            <div class="col-xs-6 ">
+                <p id="ft_h">
+                    THÔNG TIN LIÊN HỆ
+                </p>
+                <ul id="ul_ft">
+                    <li><img src="img/icon/home.png" id="ic_ft1"> Đoàn TNCS Hồ Chí Minh Thôn Vân Quật
+                    </li>
+                    <li> <img src="img/icon/map.png" id="ic_ft1"> Thôn Vân Quật, Xã Duy Thành, Huyện Duy Xuyên, Tỉnh Quảng Nam
+                    </li>
+                    <li> <img src="img/icon/contact.png" id="ic_ft1"> doanthonvanquat@gmail.com
+                    </li>
+                </ul>
 
-                </div>
-                <div class="col-xs-6 ">
-                    <p id="ft_h">
-                        THEO DÕI CHÚNG TÔI
-                    </p>
-                    <ul id="ul_ft">
-                        <li><img src="img/icon/fb.jpg" id="ic_ft">
-                            <a
-                                href="https://www.facebook.com/profile.php?id=100082551411057"
-                                style="color: #810505;">Tuổi Trẻ Vân Quật Duy
+            </div>
+            <div class="col-xs-6 ">
+                <p id="ft_h">
+                    THEO DÕI CHÚNG TÔI
+                </p>
+                <ul id="ul_ft">
+                    <li><img src="img/icon/fb.jpg" id="ic_ft">
+                        <a href="https://www.facebook.com/profile.php?id=100082551411057" style="color: #810505;">Tuổi Trẻ Vân Quật Duy
                                 Thành</a> </li>
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
-        <footer id="ft" class="bg-light mt-2">
-            <h6>
-                Trang web được phát triển bởi
-                <a href="https://www.facebook.com/VietAn.Tran.1606.CE001"
-                    style="color: #810505;">Trần Viết An</a>
-            </h6>
-            <h6>Trang web đang được triển khai trên nên tảng Github cá nhân</h6>
-        </footer>
-        <audio id="audio_p">
+    </div>
+    <footer id="ft" class="bg-light mt-2">
+        <h6>
+            Trang web được phát triển bởi
+            <a href="https://www.facebook.com/VietAn.Tran.1606.CE001" style="color: #810505;">Trần Viết An</a>
+        </h6>
+        <h6>Trang web đang được triển khai trên nên tảng Github cá nhân</h6>
+    </footer>
+    <audio id="audio_p">
             <source src="./audio/GiaiDieuTuHao.mp3">
         </audio>
-        <!-- ---------end footer-------- -->
-    </body>
-    <script>
-        pannellum.viewer('panorama1', {
-            "type": "equirectangular",
-            "panorama": "img/dcd_ctvq1.jpg",
-            "autoLoad": true
-        });
-        pannellum.viewer('panorama2', {
-            "type": "equirectangular",
-            "panorama": "img/dcd_ctvq2.jpg",
-            "autoLoad": true
-        });
+    <!-- ---------end footer-------- -->
+</body>
+<script>
+    pannellum.viewer('panorama1', {
+        "type": "equirectangular",
+        "panorama": "img/dcd_ctvq1.jpg",
+        "autoLoad": true
+    });
+    pannellum.viewer('panorama2', {
+        "type": "equirectangular",
+        "panorama": "img/dcd_ctvq2.jpg",
+        "autoLoad": true
+    });
+</script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
 
-    </script>
-    <script>
-        var audio = document.getElementById("audio_p");
-        function funcplay() {
-          audio.play();
-        }
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    
-      </script>
 </html>
