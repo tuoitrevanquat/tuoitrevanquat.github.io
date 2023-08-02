@@ -74,16 +74,22 @@ h6 {
 
 #sty_ne {
     background-color: #242044;
-    height: 400px;
+    height: auto;
+    padding-bottom: 10px;
 }
-
+#sty_mapred {
+    background-color: #242044;
+    height: auto;
+    padding-bottom: 10px;
+}
 #p_ne {
     text-align: center;
     color: aliceblue;
     margin: 0px 0px 0px 0px;
     font-size: 16px;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #img_card {
@@ -112,11 +118,20 @@ h6 {
 #card_news:hover {
     box-shadow: 4px 4px 4px 4px #28a3eb;
 }
+#card_mapred:hover {
+    box-shadow: 4px 4px 4px 4px #e67a7a;
+}
 
 #btn_dt {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+#sty_mapred{
+    background-color: #810505;
+    height: auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -135,7 +150,8 @@ h6 {
         margin: 0px 0px 0px 0px;
         font-size: 13px;
         font-weight: 500;
-        margin-top: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     #card_news {
@@ -165,13 +181,17 @@ h6 {
     }
 
     #sty_ne {
-        height: 230px;
+        height: auto;
+        padding-bottom: 15px;
     }
-
     #p_ne {
         font-size: 10px;
         font-weight: 500;
         margin-top: 6px;
+    }
+
+    #sty_mapred{
+        height: auto;
     }
 }
 
@@ -213,12 +233,20 @@ h6 {
     width: 40px;
     border-radius: 15px;
 }
-
+#ic_ft2 {
+    width: 15px;
+    /* background-color: #810505; */
+    color: #242044;
+    border-radius: 5px;
+    padding: 2px;
+    margin-right: 2px;
+}
 #ic_ft1 {
     width: 15px;
     background-color: #810505;
     border-radius: 5px;
     padding: 2px;
+    margin-right: 2px;
 }
 
 @media screen and (max-width: 600px) {
@@ -246,12 +274,16 @@ h6 {
     #ft_h {
         margin-top: 20px;
     }
+    #ic_ft1 {
+        width: 13px;
+        border-radius: 2px;
+        margin-left: 5px;
+        margin-right: 2px;
+    }
 }
-
 
 .topnav {
     overflow: hidden;
-    /* background-color: #f8f9fa; */
 }
 
 .topnav a {

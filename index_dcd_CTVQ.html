@@ -66,7 +66,7 @@
                         <img id="icon_mn" src="img/icon/map.png">
                         Địa Chỉ Đỏ
                     </a>
-                    <a href id="mn">
+                    <a href="index_lh.html" id="mn">
                         <img id="icon_mn" src="img/icon/contact.png">
                         Liên hệ
                     </a>
@@ -84,11 +84,13 @@
         <!-- ----------------------end carousel-------- -->
         <!-- ---------------conten info------------- -->
         <div class="container-fluid mt-2" id="tab1">
-            <div style="width: 100%; height: auto;background-color: #424242;">
+            <div id="fr_map">
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
                 <p
-                    style=" text-align: center; color: white;padding-top: 3px; font-weight: 600;">Bảng
+                    style="text-align: center; color: white; font-weight: 600; margin-bottom: 5px; margin-top: 3px;">Bảng
                     đồ đi đến địa điểm: Tượng đài Chiến thắng Vân Quật</p>
-                <iframe
+                </div>
+                    <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d479.81447764402594!2d108.3009815!3d15.8294641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314209339721c46b%3A0x1ec28028659ce469!2zVMaw4bujbmcgxJHDoGkgQ2hp4bq_biB0aOG6r25nIFbEg24gUXXhuq10!5e0!3m2!1sen!2s!4v1690877952816!5m2!1sen!2s"
                     width="100%" style="border:0;" allowfullscreen
                     loading="lazy"
@@ -99,8 +101,21 @@
         </div>
         <div class="container-fluid mt-2 bg-light">
             <div class="row">
-                <div class="col-xs-3 bg-primary" id="tab2">
-                    dsfsf
+                <div class="col-xs-3" id="tab2">
+                    <div id="fr_map">
+                        <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                        <p
+                            style="text-align: justify; color: white; font-weight: 600; margin: 5px;">Bảng
+                            đồ đi đến địa điểm: Tượng đài Chiến thắng Vân Quật</p>
+                        </div>
+                            <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d479.81447764402594!2d108.3009815!3d15.8294641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314209339721c46b%3A0x1ec28028659ce469!2zVMaw4bujbmcgxJHDoGkgQ2hp4bq_biB0aOG6r25nIFbEg24gUXXhuq10!5e0!3m2!1sen!2s!4v1690877952816!5m2!1sen!2s"
+                            width="100%" style="border:0;" allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <p style="margin: 5px;">Vị trí: Thôn Vân Quật, Xã Duy Thành,Duy Xuyên, Quảng Nam, Việt Nam</p>
                 </div>
                 <div class="col-xs-9" id="tab3">
                     <h3 style="text-align: center;">Di tích: Chiến thắng Vân
@@ -119,10 +134,10 @@
                         <div id="panorama1"></div>
                     </div>
                     <div
-                        style="width: 100%; display:flex; justify-content:center;">
+                        style="width: 100%; display:flex; justify-content:center; padding-top: 20px;">
                         <div id="panorama2"></div>
                     </div>
-                    </div>
+                    
                     <p id="p_intro">Tháng 9/1964, xã Duy Thành (Xuyên Tân cũ)
                         được giải phóng. Nhân dân toàn xã nô nức xây dựng chính
                         quyền cách mạng, xây dựng lực lượng vũ trang, củng cố
@@ -292,14 +307,12 @@
     <script>
         pannellum.viewer('panorama1', {
             "type": "equirectangular",
-            "panorama": "https://scontent.xx.fbcdn.net/v/t1.15752-9/358238597_106868572483292_4745422044835137671_n.jpg?stp=dst-jpg_p160x160&_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=lm7T10JT5vMAX_lFd4f&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRZXt-3ZVUpoyTnp77j4DEzMfkHfUTp8AgD5Nw3gjVDqg&oe=64ED319E",
-            // "panorama": "./img/anhpanorama7.jpg",
+            "panorama": "img/dcd_ctvq1.jpg",
             "autoLoad": true
         });
         pannellum.viewer('panorama2', {
             "type": "equirectangular",
-            // "panorama": "https://scontent.xx.fbcdn.net/v/t1.15752-9/358216011_185621684359638_2911792766507052994_n.jpg?stp=dst-jpg_s417x417&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=YBeXgQC74jMAX_Fkk2Z&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSw7QgaLeJa0M7z0RkiEcKWk-bDgHD2zkpPrQx8um0maw&oe=64ED5D7E",
-            "panorama": "img/dcd_vq1.jpg",
+            "panorama": "img/dcd_ctvq2.jpg",
             "autoLoad": true
         });
 

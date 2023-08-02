@@ -45,7 +45,7 @@
       <div id="menu_center">
         <div class="topnav" id="myTopnav">
 
-          <a href="index.html" id="mn" onclick="funcplay()">
+          <a id="mn" onclick="funcplay()">
             <img id="icon_mn" src="img/icon/home.png">
             Trang Chủ
           </a>
@@ -53,15 +53,15 @@
             <img id="icon_mn" src="img/icon/info.png">
             Giới Thiệu
           </a>
-          <a href id="mn">
+          <a href="index_HD.html" id="mn">
             <img id="icon_mn" src="img/icon/news.png">
             Hoạt Động
           </a>
-          <a href="index_dcd_CTVQ.html" id="mn">
+          <a href="index_DCD1.html" id="mn">
             <img id="icon_mn" src="img/icon/map.png">
             Địa Chỉ Đỏ
           </a>
-          <a href id="mn">
+          <a href="index_lh.html" id="mn">
             <img id="icon_mn" src="img/icon/contact.png">
             Liên hệ
           </a>
@@ -120,12 +120,16 @@
                 <img class="card-img-top" src="img/dtvq1.jpg" id="img_card">
                 <div class="card-body">
                   <p class="card-title text-center" id="ch">Hội trại 2022</p>
-                  <p class="card-text" id="ch1">Hưởng ứng phong trào hoạt động hè 2022, Chi
+                  <p class="card-text" id="ch1">Hưởng ứng phong trào hoạt động
+                    hè 2022, Chi
                     đoàn thôn Vân Quật đã...</p>
-                  <div id="btn_dt">
-                    <a href="index_HD1.html" class="btn btn-primary"  id="btn_a">Xem chi
-                      tiết</a>
-                  </div>
+                  <!-- <div id="btn_dt"> -->
+                    <button type="button" class="btn btn-primary" style="padding: 2px; "><a
+                        href="index_HD1.html" style="color: aliceblue;">Xem chi
+                        tiết</a></button>
+                    <!-- <a href="index_HD1.html" class="btn btn-primary"  id="btn_a">Xem chi -->
+                    <!-- tiết</a> -->
+                  <!-- </div> -->
                 </div>
               </div>
             </div>
@@ -134,12 +138,12 @@
                 <img class="card-img-top" src="img/dtvq2.jpg" id="img_card">
                 <div class="card-body">
                   <p class="card-title text-center" id="ch">Vân Quật - CĐKT ss2</p>
-                  <p class="card-text" id="ch1">Tiếp nối không khí của hội tại, BCH Đoàn
+                  <p class="card-text" id="ch1">Tiếp nối không khí của hội tại,
+                    BCH Đoàn
                     thôn Vân Quật tiếp tục tổ...</p>
-                  <div id="btn_dt">
-                    <a href="index_HD2.html" class="btn btn-primary"  id="btn_a">Xem chi
-                      tiết</a>
-                  </div>
+                    <button type="button" class="btn btn-primary" style="padding: 2px; "><a
+                      href="index_HD2.html" style="color: aliceblue;">Xem chi
+                      tiết</a></button>
                 </div>
               </div>
             </div>
@@ -147,13 +151,14 @@
               <div class="card" id="card_news">
                 <img class="card-img-top" src="img/dtvq3.jpg" id="img_card">
                 <div class="card-body">
-                  <p class="card-title text-center" id="ch">Hoạt động thiện nguyện</p>
-                  <p class="card-text" id="ch1">Trao gửi yêu thương. Đoàn viên thôn Vân
+                  <p class="card-title text-center" id="ch">Hoạt động thiện
+                    nguyện</p>
+                  <p class="card-text" id="ch1">Trao gửi yêu thương. Đoàn viên
+                    thôn Vân
                     Quật chung tay..</p>
-                  <div id="btn_dt">
-                    <a href="index_HD3.html" class="btn btn-primary" id="btn_a">Xem chi
-                      tiết</a>
-                  </div>
+                    <button type="button" class="btn btn-primary" style="padding: 2px; "><a
+                      href="index_HD3.html" style="color: aliceblue;">Xem chi
+                      tiết</a></button>
                 </div>
               </div>
             </div>
@@ -165,6 +170,49 @@
       </div>
     </div>
     <!-- --------endnews----------- -->
+
+    <!-- --------mapred----------- -->
+    <div class="container-fluid" id="sty_mapred">
+      <p id="p_ne">Số hóa bản đồ địa chỉ đỏ</p>
+      <div class="row">
+        <div class="col-xs-2" id="dis1">
+        </div>
+        <div class="col-xs-8" id="dis2">
+          <!-- ----car------ -->
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="card" id="card_mapred">
+                <img class="card-img-top" src="img/dcd_vq2.jpg" id="img_card">
+                <div class="card-body">
+                  <h6><a href="index_dcd_CTVQ.html">Di tích chiến thắng Vân Quật</a></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="card" id="card_mapred">
+                <img class="card-img-top" src="img/dcd_nt0.jpg" id="img_card">
+                <div class="card-body">
+                  <h6><a href="index_dcd_NTLS.html">Nghĩa trang liệt sĩ xã Duy
+                      Thành</a></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="card" id="card_mapred">
+                <img class="card-img-top" src="img/dcd_xb.jpg" id="img_card">
+                <div class="card-body">
+                  <h6><a href="index_dcd_XB.html">Di tích vụ thảm sát xóm Bàu</a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- -----end ----car------ -->
+        </div>
+        <div class="col-xs-2" id="dis1"> </div>
+      </div>
+    </div>
+    <!-- ----end--------mapred----------- -->
 
     <!-- ---------footer-------- -->
     <div class="container-fluid bg-light " id="ft_bg">
